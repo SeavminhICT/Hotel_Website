@@ -1,325 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Booking Confirmation</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Booking</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" >
-            <span class="logo-text">Logoipsum</span>
-        </div>
-        
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">BOOKINGS</a></li>
-                <li><a href="#">EXPLORE</a></li>
-                <li><a href="#">MEMBERSHIP</a></li>
-            </ul>
-        </nav>
-        
-        <div class="auth-buttons">
-            <button class="register-btn">Register</button>
-            <button class="signin-btn">Sign In</button>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="page-container">
-        <h1>Confirm Booking</h1>
-        
-        <div class="booking-container">
-            <!-- Left side - Booking Form -->
-            <div class="booking-form">
-                <!-- Personal Information Section -->
-                <div class="form-section">
-                    <h2>Your details</h2>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName" class="required">First name</label>
-                            <input type="text" id="firstName">
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName" class="required">Last name</label>
-                            <input type="text" id="lastName">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone" class="required">Phone Number</label>
-                            <input type="tel" id="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="required">Email Address</label>
-                            <input type="email" id="email">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="address">Full Address</label>
-                            <input type="text" id="address">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="specialRequests">Special requests to hotel</label>
-                            <textarea id="specialRequests"></textarea>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Payment Information Section -->
-                <div class="form-section">
-                    <h2>Payment information</h2>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="cardName">Name on card</label>
-                            <input type="text" id="cardName">
-                        </div>
-                        <div class="form-group">
-                            <label for="cardNumber" class="required">Credit Card Number</label>
-                            <input type="text" id="cardNumber">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="expDate" class="required">Expiration Date</label>
-                            <div class="expiry-inputs">
-                                <select id="expMonth">
-                                    <option value="">Month</option>
-                                    <option value="01">01</option>
-                                    <option value="02">02</option>
-                                    <!-- More options would go here -->
-                                </select>
-                                <select id="expYear">
-                                    <option value="">Year</option>
-                                    <option value="2023">2023</option>
-                                    <option value="2024">2024</option>
-                                    <!-- More options would go here -->
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="cvv" class="required">CVV/CVC</label>
-                            <input type="text" id="cvv" maxlength="4">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Billing Address Section -->
-                <div class="form-section">
-                    <h2>Billing Address</h2>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="billingFirstName">First name</label>
-                            <input type="text" id="billingFirstName">
-                        </div>
-                        <div class="form-group">
-                            <label for="billingLastName">Last name</label>
-                            <input type="text" id="billingLastName">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="billingPhone">Phone Number</label>
-                            <input type="tel" id="billingPhone">
-                        </div>
-                        <div class="form-group">
-                            <label for="billingEmail">Email Address</label>
-                            <input type="email" id="billingEmail">
-                        </div>
-                    </div>
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="country">Country</label>
-                            <select id="country">
-                                <option value="">Country</option>
-                                <!-- Options would go here -->
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="state">State/Province</label>
-                            <input type="text" id="state">
-                        </div>
-                        <div class="form-group">
-                            <label for="zipcode">Postal (ZIP) Code</label>
-                            <input type="text" id="zipcode">
-                        </div>
-                    </div>
-                </div>
-
-                <button class="submit-btn">Confirm & Proceed</button>
-            </div>
-            
-            <!-- Right side - Booking Summary -->
-            <div class="booking-summary">
-                <!-- Hotel Information -->
-                <div class="hotel-card">
-                    <h3 class="hotel-name">The Fullerton Hotel Singapore</h3>
-                    <div class="hotel-rating">★★★★★</div>
-                    <div class="hotel-address">1 Fullerton Square, CBD, 049178 Singapore, Singapore</div>
-                    <div class="hotel-reviews">8.9 Great Reviews</div>
-                    
-                    <div class="amenities">
-                        <div class="amenity">
-                            <i>🔍</i> Free Wi-fi
-                        </div>
-                        <div class="amenity">
-                            <i>🏙️</i> River View
-                        </div>
-                        <div class="amenity">
-                            <i>🛏️</i> Sale
-                        </div>
-                    </div>
-                    <div class="amenity">
-                        <i>💰</i> Perfect price
-                    </div>
-                </div>
-
-                <!-- Booking Details -->
-                <div class="booking-details">
-                    <h3>Your booking details</h3>
-                    
-                    <div class="date-row">
-                        <div class="date-box">
-                            <div class="date-label">Check-in</div>
-                            <div class="date-value">Tue, 09 Jul, 2024</div>
-                        </div>
-                        <div class="date-box">
-                            <div class="date-label">Check-out</div>
-                            <div class="date-value">Wed, 10 Jul, 2024</div>
-                        </div>
-                    </div>
-                    
-                    <div class="room-details">
-                        Deluxe Room
-                    </div>
-                    
-                    <div class="guest-details">
-                        1 night, 2 adults, 0 children
-                    </div>
-                </div>
-                
-                <!-- Pricing Summary -->
-                <div class="pricing">
-                    <h3>Pricing Summary</h3>
-                    
-                    <div class="price-row">
-                        <span>1 room × 1 night</span>
-                        <span>$$$</span>
-                    </div>
-                    
-                    <div class="price-row">
-                        <span>Tax and service fees</span>
-                        <span>$$</span>
-                    </div>
-                    
-                    <div class="price-total">
-                        <span>Total</span>
-                        <span>$$$$</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <header class="header">
+    <div class="header-logo">
+      <img src="https://via.placeholder.com/150x50?text=Logoipsum" alt="Logo">
     </div>
-    
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-column">
-                <div class="logo">
-                    <img src="images/logo.png"  class="footer-logo">
-                    <span class="logo-text">Logoipsum</span>
-                </div>
-            </div>
-            
-            <div class="footer-column">
-                <h3>About Us</h3>
-                <ul>
-                    <li><a href="#">Company Overview</a></li>
-                    <li><a href="#">Our Mission & Values</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Press Releases</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Customer Service</h3>
-                <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Live Chat</a></li>
-                    <li><a href="#">Cancellation Policy</a></li>
-                    <li><a href="#">Booking Policies</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Explore</h3>
-                <ul>
-                    <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Special Offers</a></li>
-                    <li><a href="#">Last-Minute Deals</a></li>
-                    <li><a href="#">Travel Guides</a></li>
-                    <li><a href="#">Blog & Travel Tips</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Accessibility</a></li>
-                    <li><a href="#">Feedback & Suggestions</a></li>
-                    <li><a href="#">Sitemap</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Membership</h3>
-                <ul>
-                    <li><a href="#">Loyalty Program</a></li>
-                    <li><a href="#">Limited Exclusive Offers</a></li>
-                    <li><a href="#">Rewards & Benefits</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <div>© 2024 Logoipsum. All rights reserved.</div>
-            
-            <div class="social-icons">
-                <div class="social-icon">
-                    <img src="images/twitter.png" alt="Twitter">
-                </div>
-                <div class="social-icon">
-                    <img src="images/linkedin.png" alt="LinkedIn">
-                </div>
-                <div class="social-icon">
-                    <img src="images/whatsapp.png" alt="WhatsApp">
-                </div>
-                <div class="social-icon">
-                    <img src="images/facebook.png" alt="Facebook">
-                </div>
-            </div>
-        </div>
-    </footer>
+    <nav class="header-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Membership</a></li>
+      </ul>
+    </nav>
+    <div class="header-user-icon" title="User Profile">
+      <svg width="24" height="24" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8" r="4"/><path d="M12 14c-5 0-8 2.5-8 5v1h16v-1c0-2.5-3-5-8-5z"/></svg>
+    </div>
+  </header>
 
-   
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Chase elegance. Reserve your dream stay now.</h1>
+      <p>Discover the finest hotels from all over the world.</p>
+    </div>
+
+    <div class="booking-bar">
+      <div class="booking-item destination">
+        <label><span class="icon">&#x1F4CD;</span> Where are you headed?</label>
+        <select>
+          <option>Singapore</option>
+          <option>New York</option>
+          <option>Tokyo</option>
+        </select>
+      </div>
+      <div class="booking-item checkin">
+        <label><span class="icon">&#x1F4C5;</span> Check in</label>
+        <div class="date-input-wrapper">
+          <input type="date" />
+          <span class="date-icon">&#x1F4C5;</span>
+        </div>
+      </div>
+      <div class="booking-item checkout">
+        <label><span class="icon">&#x1F4C5;</span> Check out</label>
+        <div class="date-input-wrapper">
+          <input type="date" />
+          <span class="date-icon">&#x1F4C5;</span>
+        </div>
+      </div>
+      <div class="booking-item rooms">
+        <label><span class="icon">&#x1F464;</span> Rooms | Adults, Children</label>
+        <select>
+          <option>01 | 02</option>
+          <option>02 | 04</option>
+          <option>03 | 06</option>
+        </select>
+      </div>
+      <button class="booking-button">Book Now</button>
+    </div>
+  </section>
+
+  <section class="listings">
+    <h2 class="section-title">Top Rated</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501117716987-c8e6a7a3a3a3?auto=format&fit=crop&w=400&q=80" alt="The Spectator Hotel">
+        <h3>The Spectator Hotel</h3>
+        <p class="price">$2024 <span>/ night</span></p>
+        <p class="address">123 Street, City, Country</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Marseilles Beachfront Hotel">
+        <h3>Marseilles Beachfront Hotel</h3>
+        <p class="price">$2024 <span>/ night</span></p>
+        <p class="address">123 Street, City, Country</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Andronis Boutique Hotel">
+        <h3>Andronis Boutique Hotel</h3>
+        <p class="price">$2024 <span>/ night</span></p>
+        <p class="address">123 Street, City, Country</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501183638714-8b2b43b292b8?auto=format&fit=crop&w=400&q=80" alt="Waldorf Astoria Los Cabos Pedregal">
+        <h3>Waldorf Astoria Los Cabos Pedregal</h3>
+        <p class="price">$2024 <span>/ night</span></p>
+        <p class="address">123 Street, City, Country</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=400&q=80" alt="Deco Boutique Hotel">
+        <h3>Deco Boutique Hotel</h3>
+        <p class="price">$2024 <span>/ night</span></p>
+        <p class="address">123 Street, City, Country</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Category</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501183638714-8b2b43b292b8?auto=format&fit=crop&w=400&q=80" alt="Hotel Raphael">
+        <h3>Hotel Raphael</h3>
+        <p class="price">$2024 <span>/ night</span></p>
+        <p class="address">123 Street, City, Country</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Viroth's Hotel">
+        <h3>Viroth's Hotel</h3>
+        <p class="price">$2024 <span>/ night</span></p>
+        <p class="address">123 Street, City, Country</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501117716987-c8e6a7a3a3a3?auto=format&fit=crop&w=400&q=80" alt="Hotel Best Auto Hogar">
+        <h3>Hotel Best Auto Hogar</h3>
+        <p class="price">$2024 <span>/ night</span></p>
+        <p class="address">123 Street, City, Country</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=400&q=80" alt="Trump International Hotel Washington D.C.">
+        <h3>Trump International Hotel Washington D.C.</h3>
+        <p class="price">$2024 <span>/ night</span></p>
+        <p class="address">123 Street, City, Country</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Kayakapi Premium Caves - Cappadocia">
+        <h3>Kayakapi Premium Caves - Cappadocia</h3>
+        <p class="price">$2024 <span>/ night</span></p>
+        <p class="address">123 Street, City, Country</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="https://via.placeholder.com/150x50?text=Logoipsum" alt="Logo">
+      </div>
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="#">Company Overview</a></li>
+          <li><a href="#">Our Mission & Values</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press Releases</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Live Chat</a></li>
+          <li><a href="#">Cancellation Policy</a></li>
+          <li><a href="#">Booking Policies</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Special Offers</a></li>
+          <li><a href="#">Last-Minute Deals</a></li>
+          <li><a href="#">Travel Guides</a></li>
+          <li><a href="#">Blog & Travel Tips</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Feedback & Suggestions</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Membership</h3>
+        <ul>
+          <li><a href="#">Loyalty Program</a></li>
+          <li><a href="#">Unlock Exclusive Offers</a></li>
+          <li><a href="#">Rewards & Benefits</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-social-icons">
+      <div class="social-icons">
+        <a href="#" aria-label="Twitter" title="Twitter"><svg width="24" height="24" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.4.36a9.14 9.14 0 01-2.88 1.1A4.52 4.52 0 0016.67 0c-2.5 0-4.5 2.29-4.5 5.11 0 .4.05.8.14 1.18A12.94 12.94 0 013 1.64a4.93 4.93 0 00-.61 2.57c0 1.77.87 3.33 2.2 4.25a4.48 4.48 0 01-2.04-.57v.06c0 2.48 1.7 4.54 3.95 5a4.52 4.52 0 01-2.03.08c.57 1.8 2.22 3.12 4.18 3.16A9.06 9.06 0 012 19.54a12.8 12.8 0 006.92 2.06c8.3 0 12.84-7.1 12.84-13.26 0-.2 0-.42-.02-.63A9.22 9.22 0 0023 3z"/></svg></a>
+        <a href="#" aria-label="LinkedIn" title="LinkedIn"><svg width="24" height="24" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.98 3.5C3.34 3.5 2 4.84 2 6.48c0 1.64 1.34 2.98 2.98 2.98 1.64 0 2.98-1.34 2.98-2.98 0-1.64-1.34-2.98-2.98-2.98zM2.5 8.5h5v13h-5v-13zm7.5 0h4.8v1.8h.1c.7-1.3 2.4-2.7 4.9-2.7 5.2 0 6.2 3.4 6.2 7.8v8.1h-5v-7.2c0-1.7 0-3.9-2.4-3.9-2.4 0-2.8 1.9-2.8 3.8v7.3h-5v-13z"/></svg></a>
+        <a href="#" aria-label="Facebook" title="Facebook"><svg width="24" height="24" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.7 0H1.3C.6 0 0 .6 0 1.3v21.4c0 .7.6 1.3 1.3 1.3h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1 1.9-4.8 4.7-4.8 1.3 0 2.4.1 2.7.1v3.1h-1.8c-1.4 0-1.7.7-1.7 1.6v2.2h3.4l-.4 3.6h-3v9.3h5.9c.7 0 1.3-.6 1.3-1.3V1.3c0-.7-.6-1.3-1.3-1.3z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2024 Ascenda. All rights reserved.
+    </div>
+  </footer>
+
 </body>
 </html>
