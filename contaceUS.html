@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resort Contact Page</title>
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/root.css">
+
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Flowbite CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+
+  <!-- AOS (Animations) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- <link rel="stylesheet" href="css/header.css" /> -->
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -17,123 +30,115 @@
       max-height: 500px;
       object-fit: cover;
     }
-    .location-contact-section {
-      padding: 60px 20px;
-    }
-    .map-image {
-      max-width: 100%;
-      height: auto;
-    }
-    .form-control, .btn {
-      border-radius: 0;
-    }
-    .reviews {
-      background: #fff;
-      padding: 40px 20px;
-    }
-    .review-box {
-      background: #f9f9f9;
-      padding: 20px;
-      margin: 10px;
-      border-radius: 10px;
-    }
     footer {
       height: 100px;
     }
   </style>
 </head>
-<body>
-  <div class="header">
-        
-        <div class="logo">
-          <img src="images/logo.png">
-          <span class="logo-text">Logoipsum</span>
-        </div>
-      
-        <nav>
-          <ul class="nav-links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">BOOKINGS</a></li>
-            <li><a href="contaceUS.html" class="active">CONTACE US</a></li>
-            <li><a href="#">MEMBERSHIP</a></li>
-          </ul>
-        </nav>
-      
-        <div class="auth-buttons">
-          <button class="register-btn">Register</button>
-          <button class="signin-btn">Sign In</button>
-        </div>
-      
-        <button class="hamburger">&#9776;</button>
-      </div>
-  <header>
-    <img src="https://cdn.getyourguide.com/img/tour/616e6b6821640.jpeg/145.jpg" alt="Resort Entrance">
-  </header>
+<body class="text-gray-800">
 
-  <section class="location-contact-section container">
-    <div class="row">
-      <div class="col-md-6" data-aos="fade-right">
-        <h2>LOCATION</h2>
-        <!-- <img src="https://via.placeholder.com/400x300?text=Map" class="map-image" alt="Map"> -->
-         <iframe class="map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18414.6509576405!2d103.86219341590325!3d13.410832872278915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311017fd44b59925%3A0x4a9834c47bd6ee10!2z4Z6n4Z6R4Z-S4Z6Z4Z624Z6T4Z6Y4Z674Z6B4Z6U4Z-S4Z6a4Z624Z6f4Z624Z6R4Z6i4Z6E4Z-S4Z6C4Z6a4Z6c4Z6P4Z-S4Z6P!5e1!3m2!1sen!2skh!4v1747717086376!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p>FABULOUSLY REMOTE, YET ACCESSIBLE<br>We are located in Siem Reap Province, approximately 30 minutes from the Siem Reap Airport and 45 minutes from Angkor Wat temple complex.</p>
-        <p>The retreat is situated in a peaceful jungle area, just a few minutes from Phnom Kulen National Park. Whether you're arriving from Phnom Penh, Siem Reap, or elsewhere, our dedicated team is available to help plan your transfer and arrival experience.</p>
+  <!-- Header/Navbar -->
+      <nav class="sticky top-0 z-50 bg-white border-gray-200 dark:bg-gray-900">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    
+    <!-- Logo -->
+    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+    </a>
+
+    <!-- Date/Time -->
+    <span id="datetimenow" class="text-sm text-gray-600 dark:text-gray-300"></span>
+
+    <!-- Hamburger Button -->
+    <button data-collapse-toggle="navbar-default" type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700"
+      aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!-- Navigation Menu -->
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul
+        class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gray-50 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li><a href="home.html"
+            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+            aria-current="page">Home</a></li>
+        <li><a href="myBookings.html"
+            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+            aria-current="page">My Bookings</a></li>
+        <li><a href="aboutus.html"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">About US</a>
+        </li>
+        <li><a href="#"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Services</a>
+        </li>
+        <li><a href="contaceUS.html"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Contact
+            US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero Image -->
+  <img src="https://cdn.getyourguide.com/img/tour/616e6b6821640.jpeg/145.jpg" alt="Resort Entrance" class="w-full max-h-[500px] object-cover" />
+
+  <!-- Contact Section -->
+  <section class="container mx-auto px-4 py-12 grid md:grid-cols-2 gap-10">
+    <div data-aos="fade-right">
+      <h2 class="text-2xl font-semibold mb-4">LOCATION</h2>
+      <iframe class="w-full h-64 rounded mb-4" src="https://www.google.com/maps/embed?pb=..." allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <p class="mb-2">FABULOUSLY REMOTE, YET ACCESSIBLE</p>
+      <p class="mb-2">We are located in Siem Reap Province, approximately 30 minutes from the Siem Reap Airport and 45 minutes from Angkor Wat temple complex.</p>
+      <p>The retreat is situated in a peaceful jungle area, just a few minutes from Phnom Kulen National Park.</p>
+    </div>
+
+    <div data-aos="fade-left">
+      <h2 class="text-2xl font-semibold mb-4">CONTACT</h2>
+      <form class="space-y-4">
+        <div class="flex gap-4">
+          <input type="text" class="w-1/2 p-2 border border-gray-300 rounded" placeholder="Your Name" />
+          <input type="text" class="w-1/2 p-2 border border-gray-300 rounded" placeholder="Phone Number" />
+        </div>
+        <input type="email" class="w-full p-2 border border-gray-300 rounded" placeholder="Email Address" />
+        <textarea class="w-full p-2 border border-gray-300 rounded" rows="4" placeholder="Message"></textarea>
+        <div class="flex items-center gap-2">
+          <input type="checkbox" id="newsletter" class="w-4 h-4 text-green-600 border-gray-300 rounded" />
+          <label for="newsletter" class="text-sm">Put me on the resort's newsletter list</label>
+        </div>
+        <button type="submit" class="bg-green-600 text-white py-2 px-6 rounded hover:bg-green-700">Send Enquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="bg-white py-10 px-4 container mx-auto" data-aos="fade-up">
+    <h3 class="text-center text-2xl font-semibold mb-8">GUEST EXPERIENCES & REVIEWS</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-100 p-4 rounded shadow-sm">
+        <p><strong>Guest 1:</strong> Amazing stay! The resort is beautiful and serene.</p>
       </div>
-      <div class="col-md-6" data-aos="fade-left">
-        <h2>CONTACT</h2>
-        <form>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <input type="text" class="form-control" placeholder="Your Name">
-            </div>
-            <div class="form-group col-md-6">
-              <input type="text" class="form-control" placeholder="Phone number">
-            </div>
-          </div>
-          <div class="form-group">
-            <input type="email" class="form-control" placeholder="Email Address">
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-          </div>
-          <div class="form-check mb-3">
-            <input type="checkbox" class="form-check-input" id="newsletter">
-            <label class="form-check-label" for="newsletter">Put me on the resort's newsletter list</label>
-          </div>
-          <button type="submit" class="btn btn-success">Send Enquiry</button>
-        </form>
+      <div class="bg-gray-100 p-4 rounded shadow-sm">
+        <p><strong>Guest 2:</strong> Staff was friendly and the food was delicious!</p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded shadow-sm">
+        <p><strong>Guest 3:</strong> Perfect escape into nature. Highly recommended.</p>
       </div>
     </div>
   </section>
 
-  <section class="reviews container" data-aos="fade-up">
-    <h3 class="text-center mb-4">GUEST EXPERIENCES & REVIEWS</h3>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="review-box">
-          <p><strong>Guest 1:</strong> Amazing stay! The resort is beautiful and serene.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="review-box">
-          <p><strong>Guest 2:</strong> Staff was friendly and the food was delicious!</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="review-box">
-          <p><strong>Guest 3:</strong> Perfect escape into nature. Highly recommended.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 Resort. All rights reserved.</p>
+  </footer>
 
-  <footer></footer>
-
+  <!-- Scripts -->
   <script src="javascript/header.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
