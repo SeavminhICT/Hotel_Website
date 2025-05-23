@@ -42,35 +42,12 @@ header {
     color: white;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .logo img {
     height: 40px;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-}
 
-nav ul li {
-    margin-left: 25px;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #e3e3e3;
-}
 
 .user-profile .profile-circle {
     width: 35px;

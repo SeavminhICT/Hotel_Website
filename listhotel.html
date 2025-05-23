@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- Flowbite CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/detail.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+          <!-- Navbar & Hero Start -->
+  <nav class="sticky top-0 z-50 bg-white border-gray-200 dark:bg-gray-900 ">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gray-50 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li><a href="aboutus.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a></li>
+          <li><a href="aboutus.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">About</a></li>
+          <li><a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Services</a></li>
+          <li><a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+        <!-- Navbar & Hero End -->
+    <div class="container mx-auto px-4">
+        <aside class="sidebar">
+            <div class="search-box">
+                <label for="search-input">Search by hotel name</label>
+                <div class="search-input-wrapper">
+                  <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                  <input type="text" id="search-input" placeholder="eg. The Fullerton Hotel" />
+                </div>
+              </div>
+              
+              <div class="title-fitter">Filter results</div>
+              <div class="price-range-filter">
+                <h3 class="filter-title">Price Range</h3>
+                <ul class="price-options">
+                  <li>
+                    <input type="checkbox" id="price-0-200">
+                    <label for="price-0-200">$0 - $200</label>
+                    <span class="item-count">200</span>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="price-200-500">
+                    <label for="price-200-500">$200 - $500</label>
+                    <span class="item-count">100</span>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="price-500-1000">
+                    <label for="price-500-1000">$500 - $1,000</label>
+                    <span class="item-count">15</span>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="price-1000-2000">
+                    <label for="price-1000-2000">$1,000 - $2,000</label>
+                    <span class="item-count">12</span>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="price-2000-5000">
+                    <label for="price-2000-5000">$2,000 - $5,000</label>
+                    <span class="item-count">230</span>
+                  </li>
+                </ul>
+              </div>
+            
+    
+        </aside>
+    
+        <main class="main-content" >
+            <div class="hotel-card" data-aos="flip-left">
+                <img src="images/hotel1.png" alt="Hotel Image" class="hotel-image" />
+                
+                <div class="hotel-info">
+                  <div class="hotel-header">
+                    <h3>The Fullerton Hotel Singapore</h3>
+                    <div class="rating-badge">9.5</div>
+                  </div>
+                  
+                  <div class="hotel-stars">
+                    <span class="stars">★★★★★</span> 5.0 (1200 Reviews)
+                  </div>
+                  
+                  <p class="hotel-description">
+                    With a stay at The Fullerton Hotel Singapore, you'll be centrally located in Singapore, steps from Cavenagh Bridge and Anderson Bridge...
+                    <span class="more-link">more</span>
+                  </p>
+                  
+                  <div class="hotel-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="location-icon" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg>
+                    <span>1 Fullerton Square</span>
+                  </div>
+                </div>
+            
+                <div class="hotel-price-info">
+                  <div class="icons">
+                    <!-- Amenities Icons -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f9a825" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/> <!-- Keep your icon paths as in your original -->
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#007bff" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#28a745" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/>
+                    </svg>
+                  </div>
+                  
+                  <div class="price-details">
+                    <div>1 room 1 night</div>
+                    <div class="price">$2,024</div>
+                    <div class="tax-note">Taxes incl.</div>
+                    <a href="https://link.payway.com.kh/ABAPAY12358474g">
+
+                      <button class="select-button">Select</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="hotel-card" data-aos="flip-right">
+                <img src="images/hotel1.png" alt="Hotel Image" class="hotel-image" />
+                
+                <div class="hotel-info">
+                  <div class="hotel-header">
+                    <h3>The Fullerton Hotel Singapore</h3>
+                    <div class="rating-badge">9.5</div>
+                  </div>
+                  
+                  <div class="hotel-stars">
+                    <span class="stars">★★★★★</span> 5.0 (1200 Reviews)
+                  </div>
+                  
+                  <p class="hotel-description">
+                    With a stay at The Fullerton Hotel Singapore, you'll be centrally located in Singapore, steps from Cavenagh Bridge and Anderson Bridge...
+                    <span class="more-link">more</span>
+                  </p>
+                  
+                  <div class="hotel-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="location-icon" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg>
+                    <span>1 Fullerton Square</span>
+                  </div>
+                </div>
+            
+                <div class="hotel-price-info">
+                  <div class="icons">
+                    <!-- Amenities Icons -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f9a825" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/> <!-- Keep your icon paths as in your original -->
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#007bff" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#28a745" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/>
+                    </svg>
+                  </div>
+                  
+                  <div class="price-details">
+                    <div>1 room 1 night</div>
+                    <div class="price">$2,024</div>
+                    <div class="tax-note">Taxes incl.</div>
+                    <button class="select-button">Select</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hotel-card" data-aos="flip-up">
+                <img src="images/hotel1.png" alt="Hotel Image" class="hotel-image" />
+                
+                <div class="hotel-info">
+                  <div class="hotel-header">
+                    <h3>The Fullerton Hotel Singapore</h3>
+                    <div class="rating-badge">9.5</div>
+                  </div>
+                  
+                  <div class="hotel-stars">
+                    <span class="stars">★★★★★</span> 5.0 (1200 Reviews)
+                  </div>
+                  
+                  <p class="hotel-description">
+                    With a stay at The Fullerton Hotel Singapore, you'll be centrally located in Singapore, steps from Cavenagh Bridge and Anderson Bridge...
+                    <span class="more-link">more</span>
+                  </p>
+                  
+                  <div class="hotel-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="location-icon" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg>
+                    <span>1 Fullerton Square</span>
+                  </div>
+                </div>
+            
+                <div class="hotel-price-info">
+                  <div class="icons">
+                    <!-- Amenities Icons -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f9a825" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/> <!-- Keep your icon paths as in your original -->
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#007bff" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#28a745" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/>
+                    </svg>
+                  </div>
+                  
+                  <div class="price-details">
+                    <div>1 room 1 night</div>
+                    <div class="price">$2,024</div>
+                    <div class="tax-note">Taxes incl.</div>
+                    <button class="select-button">Select</button>
+                  </div>
+                </div>
+              </div>
+              <div class="hotel-card" data-aos="zoom-in">
+                <img src="images/hotel1.png" alt="Hotel Image" class="hotel-image" />
+                
+                <div class="hotel-info">
+                  <div class="hotel-header">
+                    <h3>The Fullerton Hotel Singapore</h3>
+                    <div class="rating-badge">9.5</div>
+                  </div>
+                  
+                  <div class="hotel-stars">
+                    <span class="stars">★★★★★</span> 5.0 (1200 Reviews)
+                  </div>
+                  
+                  <p class="hotel-description">
+                    With a stay at The Fullerton Hotel Singapore, you'll be centrally located in Singapore, steps from Cavenagh Bridge and Anderson Bridge...
+                    <span class="more-link">more</span>
+                  </p>
+                  
+                  <div class="hotel-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="location-icon" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg>
+                    <span>1 Fullerton Square</span>
+                  </div>
+                </div>
+            
+                <div class="hotel-price-info">
+                  <div class="icons">
+                    <!-- Amenities Icons -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f9a825" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/> <!-- Keep your icon paths as in your original -->
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#007bff" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#28a745" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/>
+                    </svg>
+                  </div>
+                  
+                  <div class="price-details">
+                    <div>1 room 1 night</div>
+                    <div class="price">$2,024</div>
+                    <div class="tax-note">Taxes incl.</div>
+                    <button class="select-button">Select</button>
+                  </div>
+                </div>
+              </div>
+              <div class="hotel-card" data-aos="zoom-in">
+                <img src="images/hotel1.png" alt="Hotel Image" class="hotel-image" />
+                
+                <div class="hotel-info">
+                  <div class="hotel-header">
+                    <h3>The Fullerton Hotel Singapore</h3>
+                    <div class="rating-badge">9.5</div>
+                  </div>
+                  
+                  <div class="hotel-stars">
+                    <span class="stars">★★★★★</span> 5.0 (1200 Reviews)
+                  </div>
+                  
+                  <p class="hotel-description">
+                    With a stay at The Fullerton Hotel Singapore, you'll be centrally located in Singapore, steps from Cavenagh Bridge and Anderson Bridge...
+                    <span class="more-link">more</span>
+                  </p>
+                  
+                  <div class="hotel-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="location-icon" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg>
+                    <span>1 Fullerton Square</span>
+                  </div>
+                </div>
+            
+                <div class="hotel-price-info">
+                  <div class="icons">
+                    <!-- Amenities Icons -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#f9a825" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/> <!-- Keep your icon paths as in your original -->
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#007bff" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#28a745" class="icon" viewBox="0 0 16 16">
+                      <path d="..."/>
+                    </svg>
+                  </div>
+                  
+                  <div class="price-details">
+                    <div>1 room 1 night</div>
+                    <div class="price">$2,024</div>
+                    <div class="tax-note">Taxes incl.</div>
+                    <button class="select-button">Select</button>
+                  </div>
+                </div>
+              </div>
+            
+        </main>
+        
+      </div>
+      <div>
+        <!-- //make card-body -->
+         <div>
+          
+         </div>
+
+      </div>
+</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>
