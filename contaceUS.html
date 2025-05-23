@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resort Contact Page</title>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f0e9;
+    }
+    header img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+    }
+    .location-contact-section {
+      padding: 60px 20px;
+    }
+    .map-image {
+      max-width: 100%;
+      height: auto;
+    }
+    .form-control, .btn {
+      border-radius: 0;
+    }
+    .reviews {
+      background: #fff;
+      padding: 40px 20px;
+    }
+    .review-box {
+      background: #f9f9f9;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    footer {
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+        
+        <div class="logo">
+          <img src="images/logo.png">
+          <span class="logo-text">Logoipsum</span>
+        </div>
+      
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">BOOKINGS</a></li>
+            <li><a href="contaceUS.html" class="active">CONTACE US</a></li>
+            <li><a href="#">MEMBERSHIP</a></li>
+          </ul>
+        </nav>
+      
+        <div class="auth-buttons">
+          <button class="register-btn">Register</button>
+          <button class="signin-btn">Sign In</button>
+        </div>
+      
+        <button class="hamburger">&#9776;</button>
+      </div>
+  <header>
+    <img src="https://cdn.getyourguide.com/img/tour/616e6b6821640.jpeg/145.jpg" alt="Resort Entrance">
+  </header>
+
+  <section class="location-contact-section container">
+    <div class="row">
+      <div class="col-md-6" data-aos="fade-right">
+        <h2>LOCATION</h2>
+        <!-- <img src="https://via.placeholder.com/400x300?text=Map" class="map-image" alt="Map"> -->
+         <iframe class="map-image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18414.6509576405!2d103.86219341590325!3d13.410832872278915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311017fd44b59925%3A0x4a9834c47bd6ee10!2z4Z6n4Z6R4Z-S4Z6Z4Z624Z6T4Z6Y4Z674Z6B4Z6U4Z-S4Z6a4Z624Z6f4Z624Z6R4Z6i4Z6E4Z-S4Z6C4Z6a4Z6c4Z6P4Z-S4Z6P!5e1!3m2!1sen!2skh!4v1747717086376!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>FABULOUSLY REMOTE, YET ACCESSIBLE<br>We are located in Siem Reap Province, approximately 30 minutes from the Siem Reap Airport and 45 minutes from Angkor Wat temple complex.</p>
+        <p>The retreat is situated in a peaceful jungle area, just a few minutes from Phnom Kulen National Park. Whether you're arriving from Phnom Penh, Siem Reap, or elsewhere, our dedicated team is available to help plan your transfer and arrival experience.</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <h2>CONTACT</h2>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" class="form-control" placeholder="Phone number">
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email Address">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+          </div>
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="newsletter">
+            <label class="form-check-label" for="newsletter">Put me on the resort's newsletter list</label>
+          </div>
+          <button type="submit" class="btn btn-success">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews container" data-aos="fade-up">
+    <h3 class="text-center mb-4">GUEST EXPERIENCES & REVIEWS</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="review-box">
+          <p><strong>Guest 1:</strong> Amazing stay! The resort is beautiful and serene.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="review-box">
+          <p><strong>Guest 2:</strong> Staff was friendly and the food was delicious!</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="review-box">
+          <p><strong>Guest 3:</strong> Perfect escape into nature. Highly recommended.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer></footer>
+
+  <script src="javascript/header.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
