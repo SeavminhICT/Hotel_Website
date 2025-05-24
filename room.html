@@ -1,286 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hotel Room Grid</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="stylesheet" href="css/room.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Room Layout</title>
+  <link rel="stylesheet" href="css/style_room.css" />
 </head>
+
 <body>
-  <div class="container py-5 rooms-section">
 
-    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-        <h6 class="section-title text-center text-primary text-uppercase">Our Rooms</h6>
-        <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Rooms</span></h1>
+  <div class="container">
+
+    <div class="banner">
+      <div class="left image-box">
+        <img src="images/banner_room1.jpg" alt="Hotel Image 1" />
       </div>
-    <div class="row g-4">
-      <!-- Room Card -->
-      <div class="col-md-4">
-        <div class="room-card">
-          <div class="position-relative">
-            <img src="images/room-3.png" class="room-img" alt="Room" />
-            <div class="price-tag">$100/Night</div>
-          </div>
-          <div class="p-3">
-            <h5 class="fw-bold">Junior Suite</h5>
-            <div class="star-rating mb-2">
-              ★★★★★
-            </div>
-            <div class="mb-2">
-              <span class="icon-text"><i class="fa-solid fa-bed"></i>3 Bed</span>
-              <span class="icon-text"><i class="fa-solid fa-bath"></i>2 Bath</span>
-              <span class="icon-text"><i class="fa-solid fa-wifi"></i>Wifi</span>
-            </div>
-            <p class="text-muted" style="font-size: 0.9rem;">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
-            </p>
-            <div class="d-flex justify-content-between">
-              <a href="#" class="btn btn-warning btn-sm text-white">VIEW DETAIL</a>
-              <a href="#" class="btn btn-dark btn-sm">BOOK NOW</a>
-            </div>
-          </div>
+      <div class="right">
+        <div class="image-box">
+          <img src="images/banner_room2.jpg" alt="Hotel Image 2" />
+        </div>
+        <div class="image-box">
+          <img src="images/banner_room3.jpg" alt="Hotel Image 3" />
         </div>
       </div>
-
-      <!-- Duplicate the above col-md-4 block for more rooms -->
-      <!-- Example: Executive Suite -->
-      <div class="col-md-4">
-        <div class="room-card">
-          <div class="position-relative">
-            <img src="images/room-1.png" class="room-img" alt="Room" />
-            <div class="price-tag">$100/Night</div>
-          </div>
-          <div class="p-3">
-            <h5 class="fw-bold">Executive Suite</h5>
-            <div class="star-rating mb-2">
-              ★★★★★
-            </div>
-            <div class="mb-2">
-              <span class="icon-text"><i class="fa-solid fa-bed"></i>3 Bed</span>
-              <span class="icon-text"><i class="fa-solid fa-bath"></i>2 Bath</span>
-              <span class="icon-text"><i class="fa-solid fa-wifi"></i>Wifi</span>
-            </div>
-            <p class="text-muted" style="font-size: 0.9rem;">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
-            </p>
-            <div class="d-flex justify-content-between">
-              <a href="#" class="btn btn-warning btn-sm text-white">VIEW DETAIL</a>
-              <a href="#" class="btn btn-dark btn-sm">BOOK NOW</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Example: Super Deluxe -->
-      <div class="col-md-4">
-        <div class="room-card">
-          <div class="position-relative">
-            <img src="images/hotel1.png" class="room-img" alt="Room" />
-            <div class="price-tag">$100/Night</div>
-          </div>
-          <div class="p-3">
-            <h5 class="fw-bold">Super Deluxe</h5>
-            <div class="star-rating mb-2">
-              ★★★★★
-            </div>
-            <div class="mb-2">
-              <span class="icon-text"><i class="fa-solid fa-bed"></i>3 Bed</span>
-              <span class="icon-text"><i class="fa-solid fa-bath"></i>2 Bath</span>
-              <span class="icon-text"><i class="fa-solid fa-wifi"></i>Wifi</span>
-            </div>
-            <p class="text-muted" style="font-size: 0.9rem;">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
-            </p>
-            <div class="d-flex justify-content-between">
-              <a href="#" class="btn btn-warning btn-sm text-white">VIEW DETAIL</a>
-              <a href="#" class="btn btn-dark btn-sm">BOOK NOW</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
-    <div class="row g-4 mt-2">
-        <!-- Room Card -->
-        <div class="col-md-4">
-          
-          <div class="room-card">
-            <div class="position-relative">
-              <img src="images/room-3.png" class="room-img" alt="Room" />
-              <div class="price-tag">$100/Night</div>
-            </div>
-            <div class="p-3">
-              <h5 class="fw-bold">Junior Suite</h5>
-              <div class="star-rating mb-2">
-                ★★★★★
-              </div>
-              <div class="mb-2">
-                <span class="icon-text"><i class="fa-solid fa-bed"></i>3 Bed</span>
-                <span class="icon-text"><i class="fa-solid fa-bath"></i>2 Bath</span>
-                <span class="icon-text"><i class="fa-solid fa-wifi"></i>Wifi</span>
-              </div>
-              <p class="text-muted" style="font-size: 0.9rem;">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
-              </p>
-              <div class="d-flex justify-content-between">
-                <a href="detail_page.html"  class="btn btn-warning btn-sm text-white">VIEW DETAIL</a>
-                <a href="#" class="btn btn-dark btn-sm">BOOK NOW</a>
-              </div>
-            </div>
-          </div>
+
+    <div class="nav-container">
+      <ul class="nav-list">
+        <li><a href="#overview" class="nav-item">Overview</a></li>
+        <li><a href="#amenities" class="nav-item">Amenities</a></li>
+        <li><a href="#room" class="nav-item">Rooms</a></li>
+        <li><a href="#location" class="nav-item">Location</a></li>
+      </ul>
+    </div>
+
+    <div class="hotel-header">
+      <div class="hotel-info">
+        <h2>Hotel Cambodiana</h2>
+        <div class="stars">★★★★★</div>
+        <div class="location">
+          <img src="images/icon_location.png" alt="Location icon" class="icon" />
+          313 Preah Sihanouk Blvd, Phnom Penh, Cambodia -
+          <a href="#location" class="show-map">show map</a>
         </div>
-  
-        <!-- Duplicate the above col-md-4 block for more rooms -->
-        <!-- Example: Executive Suite -->
-        <div class="col-md-4">
-          <div class="room-card">
-            <div class="position-relative">
-              <img src="images/room-1.png" class="room-img" alt="Room" />
-              <div class="price-tag">$100/Night</div>
-            </div>
-            <div class="p-3">
-              <h5 class="fw-bold">Executive Suite</h5>
-              <div class="star-rating mb-2">
-                ★★★★★
-              </div>
-              <div class="mb-2">
-                <span class="icon-text"><i class="fa-solid fa-bed"></i>3 Bed</span>
-                <span class="icon-text"><i class="fa-solid fa-bath"></i>2 Bath</span>
-                <span class="icon-text"><i class="fa-solid fa-wifi"></i>Wifi</span>
-              </div>
-              <p class="text-muted" style="font-size: 0.9rem;">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
-              </p>
-              <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-warning btn-sm text-white">VIEW DETAIL</a>
-                <a href="#" class="btn btn-dark btn-sm">BOOK NOW</a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Example: Super Deluxe -->
-        <div class="col-md-4">
-          <div class="room-card">
-            <div class="position-relative">
-              <img src="images/hotel1.png" class="room-img" alt="Room" />
-              <div class="price-tag">$100/Night</div>
-            </div>
-            <div class="p-3">
-              <h5 class="fw-bold">Super Deluxe</h5>
-              <div class="star-rating mb-2">
-                ★★★★★
-              </div>
-              <div class="mb-2">
-                <span class="icon-text"><i class="fa-solid fa-bed"></i>3 Bed</span>
-                <span class="icon-text"><i class="fa-solid fa-bath"></i>2 Bath</span>
-                <span class="icon-text"><i class="fa-solid fa-wifi"></i>Wifi</span>
-              </div>
-              <p class="text-muted" style="font-size: 0.9rem;">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
-              </p>
-              <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-warning btn-sm text-white">VIEW DETAIL</a>
-                <a href="#" class="btn btn-dark btn-sm">BOOK NOW</a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
       </div>
+      <button class="availability-button">See Room Availability</button>
+    </div>
+
+    <div id="overview" class="overview-section">
+      <div class="overview-text">
+        <h3>Overview</h3>
+        <p>A warm welcome to the Kingdom of Cambodia. Situated on the banks of the famous Mekong River, the magnificent
+          Hotel Cambodiana is located in the heart of Phnom Penh’s central business and tourist districts, offering
+          visitors convenient access to all that Phnom Penh has to offer.</p>
+        <p>Hotel Cambodiana is a 4-star hotel that offers a range of amenities and services to ensure a comfortable stay
+          for its guests. The hotel features spacious and well-appointed rooms, a restaurant serving local and
+          international cuisine, a fitness center, and an outdoor swimming pool. Guests can also enjoy complimentary
+          Wi-Fi access throughout the property.</p>
+        <p>With its prime location, Hotel Cambodiana is an ideal choice for both business and leisure travelers. The
+          hotel is within walking distance of popular attractions such as the Royal Palace, Silver Pagoda, and the
+          bustling riverside promenade. Whether you're visiting for business or pleasure, Hotel Cambodiana provides a
+          welcoming atmosphere and excellent service to make your stay memorable.</p>
+
+      </div>
+      <div class="highlights-box">
+        <h4>Highlights</h4>
+        <ul class="highlights-list">
+          <li><img src="images/icon_green_location.png" alt="Location" /> The location of this hotel has a rating score
+            of 96!</li>
+          <li><img src="images/icon_green_score.png" alt="Wellness" /> This hotel has a wellness rating score of 95!
+          </li>
+          <li><img src="images/icon_green_wifi.png" alt="WiFi" /> The WiFi service this hotel provides has a rating
+            score of 87!
+          </li>
+          <li><img src="images/icon_green_staff.png" alt="Staff" /> The staff’s service has an overall rating of 91!
+          </li>
+        </ul>
+      </div>
+    </div>
 
 
-      <div class="row g-4 mt-2">
-        <!-- Room Card -->
-        <div class="col-md-4">
-          <div class="room-card">
-            <div class="position-relative">
-              <img src="images/room-3.png" class="room-img" alt="Room" />
-              <div class="price-tag">$100/Night</div>
-            </div>
-            <div class="p-3">
-              <h5 class="fw-bold">Junior Suite</h5>
-              <div class="star-rating mb-2">
-                ★★★★★
-              </div>
-              <div class="mb-2">
-                <span class="icon-text"><i class="fa-solid fa-bed"></i>3 Bed</span>
-                <span class="icon-text"><i class="fa-solid fa-bath"></i>2 Bath</span>
-                <span class="icon-text"><i class="fa-solid fa-wifi"></i>Wifi</span>
-              </div>
-              <p class="text-muted" style="font-size: 0.9rem;">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
-              </p>
-              <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-warning btn-sm text-white">VIEW DETAIL</a>
-                <a href="#" class="btn btn-dark btn-sm">BOOK NOW</a>
-              </div>
-            </div>
-          </div>
+    <div id="amenities" class="main-layout">
+      <div class="amenities-section">
+        <h4>Amenities</h4>
+        <div class="amenities-grid">
+          <div class="amenity-item"><img src="images/Vector.png" alt="">Air Conditioning</div>
+          <div class="amenity-item"><img src="images/Vector (1).png" alt="">Business Center</div>
+          <div class="amenity-item"><img src="images/Vector (2).png" alt="">Clothing Iron</div>
+          <div class="amenity-item"><img src="images/Vector (3).png" alt="">Data Ports</div>
+          <div class="amenity-item"><img src="images/Vector (4).png" alt="">Dry Cleaning</div>
+          <div class="amenity-item"><img src="images/Vector (5).png" alt="">Hair Dryer</div>
+          <div class="amenity-item"><img src="images/Vector (6).png" alt="">Meeting Rooms</div>
+          <div class="amenity-item"><img src="images/Vector (7).png" alt="">Outdoor Pool</div>
+          <div class="amenity-item"><img src="images/Vector (8).png" alt="">Parking Garage</div>
+          <div class="amenity-item"><img src="images/Vector (9).png" alt="">Safe</div>
+          <div class="amenity-item"><img src="images/Vector (10).png" alt="">Room Service</div>
+          <div class="amenity-item"><img src="images/Vector (11).png" alt="">TV in Room</div>
+          <div class="amenity-item"><img src="images/Vector (12).png" alt="">Voicemail</div>
         </div>
-  
-        <!-- Duplicate the above col-md-4 block for more rooms -->
-        <!-- Example: Executive Suite -->
-        <div class="col-md-4">
-          <div class="room-card">
-            <div class="position-relative">
-              <img src="images/room-1.png" class="room-img" alt="Room" />
-              <div class="price-tag">$100/Night</div>
-            </div>
-            <div class="p-3">
-              <h5 class="fw-bold">Executive Suite</h5>
-              <div class="star-rating mb-2">
-                ★★★★★
-              </div>
-              <div class="mb-2">
-                <span class="icon-text"><i class="fa-solid fa-bed"></i>3 Bed</span>
-                <span class="icon-text"><i class="fa-solid fa-bath"></i>2 Bath</span>
-                <span class="icon-text"><i class="fa-solid fa-wifi"></i>Wifi</span>
-              </div>
-              <p class="text-muted" style="font-size: 0.9rem;">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
-              </p>
-              <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-warning btn-sm text-white">VIEW DETAIL</a>
-                <a href="#" class="btn btn-dark btn-sm">BOOK NOW</a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Example: Super Deluxe -->
-        <div class="col-md-4">
-          <div class="room-card">
-            <div class="position-relative">
-              <img src="images/hotel1.png" class="room-img" alt="Room" />
-              <div class="price-tag">$100/Night</div>
-            </div>
-            <div class="p-3">
-              <h5 class="fw-bold">Super Deluxe</h5>
-              <div class="star-rating mb-2">
-                ★★★★★
-              </div>
-              <div class="mb-2">
-                <span class="icon-text"><i class="fa-solid fa-bed"></i>3 Bed</span>
-                <span class="icon-text"><i class="fa-solid fa-bath"></i>2 Bath</span>
-                <span class="icon-text"><i class="fa-solid fa-wifi"></i>Wifi</span>
-              </div>
-              <p class="text-muted" style="font-size: 0.9rem;">
-                Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
-              </p>
-              <div class="d-flex justify-content-between">
-                <a href="#" class="btn btn-warning btn-sm text-white">VIEW DETAIL</a>
-                <a href="#" class="btn btn-dark btn-sm">BOOK NOW</a>
-              </div>
-            </div>
-          </div>
-        </div>
-  
       </div>
+      <div id="none">
+      </div>
+    </div>
+
+
+    <div id="room" class="main-room">
+      <h4>Rooms</h4>
+      <input type="checkbox" id="toggle" />
+      <div class="room-section">
+        <!-- Room 1 -->
+        <div class="room-card">
+          <div class="room-image">
+            <img src="images/image_room1.jpg" alt="Room 1">
+          </div>
+          <div class="room-details">
+            <div class="room-title">Deluxe City View</div>
+            <div class="room-description">Our Deluxe City View Rooms combine comfort and elegant decor including
+              artistically created Cambodian designs.</div>
+            <div class="room-meta">Free Wi-Fi, Air conditioner, Free Cancellation<br></div>
+            <div class="room-footer">1 Room | 2 Adults, 0 Children</div>
+          </div>
+          <div class="price-info">
+            <button class="select-button">Select</button><br><br>
+            <div class="price">$200</div>
+            <small>Cambodia</small>
+          </div>
+        </div>
+        <div class="room-card">
+          <div class="room-image">
+            <img src="images/image_room2.jpg" alt="Room 2">
+          </div>
+          <div class="room-details">
+            <div class="room-title">Superior Rooms</div>
+            <div class="room-description">Timeless Cambodian tradition meets western fusion in our well appointed
+              Superior Rooms. Choose from a King size or two Twin sized beds,</div>
+            <div class="room-meta">Free Wi-Fi<br><small></small></div>
+            <div class="room-footer">2 adults | 1 Queen Bed</div>
+          </div>
+          <div class="price-info">
+            <button class="select-button">Select</button><br><br>
+            <div class="price">$150</div>
+            <small>Cambodia</small>
+          </div>
+        </div>
+        <!-- Room 2 -->
+        <div class="more-rooms">
+          <div class="room-card">
+            <div class="room-image">
+              <img src="images/image_room3.jpg" alt="Room 2">
+            </div>
+            <div class="room-details">
+              <div class="room-title">Deluxe River View</div>
+              <div class="room-description">Our Deluxe River View combine comfort and elegant decor including
+                artistically created Cambodian designs. </div>
+              <div class="room-meta">Free Cancellation | Free Wi-Fi<br></div>
+              <div class="room-footer">2 adults | 2 Single Beds</div>
+            </div>
+            <div class="price-info">
+              <button class="select-button">Select</button><br><br>
+              <div class="price">$150</div>
+              <small>Cambodia</small>
+            </div>
+          </div>
+          <div class="room-card">
+            <div class="room-image">
+              <img
+                src="images/image_room4.jpg"
+                alt="Room 2">
+            </div>
+            <div class="room-details">
+              <div class="room-title">Junior Suite</div>
+              <div class="room-description">Our well-designed Junior Suites are equipped with modern facilities and are suitable for corporate clients, business executives and families.</div>
+              <div class="room-meta">Free Wi-Fi<br><small></small></div>
+              <div class="room-footer">2 adults | 1 King Bed</div>
+            </div>
+            <div class="price-info">
+              <button class="select-button">Select</button><br><br>
+              <div class="price">$1,500</div>
+              <small>Taxes incl.</small>
+            </div>
+
+          </div>
+          <div class="room-card">
+            <div class="room-image">
+              <img
+                src="images/image_room5.jpg"
+                alt="Room 2">
+            </div>
+            <div class="room-details">
+              <div class="room-title">Executive Suite</div>
+              <div class="room-description">Privately located at the far wing of each floor, the elegantly decorated Executive Suites are pure indulgence and highly popular with our distinguished guests.</div>
+              <div class="room-meta">Free Wifi<br></div>
+              <div class="room-footer">2 adults | 1 King Bed</div>
+            </div>
+            <div class="price-info">
+              <button class="select-button">Select</button><br><br>
+              <div class="price">$100</div>
+              <small>Cambodia</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <input type="checkbox" id="toggle" style="display:none;">
+      <label for="toggle" class="see-more-label" id="toggle-label">Show More Rooms ↓</label>
+    </div>
+
+
+
+    <div id="location" class="location-layout">
+      <h4>Location</h4>
+      <div class="location-section">
+        <div class="location-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62542.21526017614!2d104.89496340723557!3d11.559853591834777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951348f58fad3%3A0x43155c323a7e53f5!2sHotel%20Cambodiana!5e0!3m2!1sen!2skh!4v1746181308893!5m2!1sen!2skh"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
   </div>
+  </div>
+  <button id="scrollTopBtn" title="Go to top">&#8679;</button>
+  <script>
+    const toggleLabel = document.getElementById("toggle-label");
+    const toggleCheckbox = document.getElementById("toggle");
+    const roomSection = document.getElementById("roomSection");
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    toggleCheckbox.addEventListener("change", function () {
+      if (toggleCheckbox.checked) {
+        toggleLabel.textContent = "Show Less Rooms ↑";
+        roomSection.style.maxHeight = "auto";
+        setTimeout(() => {
+          roomSection.scrollIntoView({ behavior: "smooth" });
+        }, 300);
+      } else {
+        toggleLabel.textContent = "Show More Rooms ↓";
+        roomSection.style.maxHeight = "320px";
+      }
+    });
+
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    };
+
+    scrollTopBtn.onclick = function () {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    };
+
+
+    const navItems = document.querySelectorAll('.nav-item');
+
+    navItems.forEach(item => {
+      item.addEventListener('click', function (event) {
+        event.preventDefault();
+
+
+        const targetId = this.getAttribute('href').substring(1);
+
+
+        document.getElementById(targetId).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    });
+    function scrollToMoreRooms() {
+      const moreRoomsSection = document.querySelector('.more-rooms');
+      moreRoomsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    document.getElementById('toggle-label').addEventListener('click', function () {
+      const moreRooms = document.querySelector('.more-rooms');
+      if (moreRooms.style.display === 'none' || moreRooms.style.display === '') {
+        moreRooms.style.display = 'block';
+        setTimeout(() => {
+          moreRooms.style.opacity = '1';
+          moreRooms.style.transform = 'translateY(0)';
+        }, 50);
+      } else {
+        moreRooms.style.opacity = '0';
+        moreRooms.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+          moreRooms.style.display = 'none';
+        }, 500);
+      }
+    });
+
+  </script>
 </body>
+
 </html>
