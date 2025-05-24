@@ -53,27 +53,27 @@
                 <h3 class="filter-title">Price Range</h3>
                 <ul class="price-options">
                   <li>
-                    <input type="checkbox" id="price-0-200">
+                    <input type="checkbox" id="price-0-200" value="0-200">
                     <label for="price-0-200">$0 - $200</label>
                     <span class="item-count">200</span>
                   </li>
                   <li>
-                    <input type="checkbox" id="price-200-500">
+                    <input type="checkbox" id="price-200-500"  value="200-500" >
                     <label for="price-200-500">$200 - $500</label>
                     <span class="item-count">100</span>
                   </li>
                   <li>
-                    <input type="checkbox" id="price-500-1000">
+                    <input type="checkbox" id="price-500-1000"  value="500-1000">
                     <label for="price-500-1000">$500 - $1,000</label>
                     <span class="item-count">15</span>
                   </li>
                   <li>
-                    <input type="checkbox" id="price-1000-2000">
+                    <input type="checkbox" id="price-1000-2000" value="1000-2000">
                     <label for="price-1000-2000">$1,000 - $2,000</label>
                     <span class="item-count">12</span>
                   </li>
                   <li>
-                    <input type="checkbox" id="price-2000-5000">
+                    <input type="checkbox" id="price-2000-5000" value="2000-5000">
                     <label for="price-2000-5000">$2,000 - $5,000</label>
                     <span class="item-count">230</span>
                   </li>
@@ -83,7 +83,7 @@
     
         </aside>
     
-        <main class="main-content" >
+        <main class="main-content" id="hotel-container" >
             <div class="hotel-card" data-aos="flip-left">
                 <img src="images/hotel1.png" alt="Hotel Image" class="hotel-image" />
                 
@@ -124,9 +124,9 @@
                     </svg>
                   </div>
                   
-                  <div class="price-details">
+                  <div class="price-details"  >
                     <div>1 room 1 night</div>
-                    <div class="price">$2,024</div>
+                     <p class="price text-lg font-bold text-green-600">$180</p>
                     <div class="tax-note">Taxes incl.</div>
                     <a href="https://link.payway.com.kh/ABAPAY12358474g">
 
@@ -177,7 +177,7 @@
                   
                   <div class="price-details">
                     <div>1 room 1 night</div>
-                    <div class="price">$2,024</div>
+                    <div class="price">$200</div>
                     <div class="tax-note">Taxes incl.</div>
                     <button class="select-button">Select</button>
                   </div>
@@ -226,7 +226,7 @@
                   
                   <div class="price-details">
                     <div>1 room 1 night</div>
-                    <div class="price">$2,024</div>
+                    <div class="price">$194</div>
                     <div class="tax-note">Taxes incl.</div>
                     <button class="select-button">Select</button>
                   </div>
@@ -274,7 +274,7 @@
                   
                   <div class="price-details">
                     <div>1 room 1 night</div>
-                    <div class="price">$2,024</div>
+                    <div class="price">$220</div>
                     <div class="tax-note">Taxes incl.</div>
                     <button class="select-button">Select</button>
                   </div>
@@ -322,7 +322,7 @@
                   
                   <div class="price-details">
                     <div>1 room 1 night</div>
-                    <div class="price">$2,024</div>
+                    <div class="price">$500</div>
                     <div class="tax-note">Taxes incl.</div>
                     <button class="select-button">Select</button>
                   </div>
@@ -339,7 +339,43 @@
          </div>
 
       </div>
+      
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("hotel-container");
+
+    // Create and append sort dropdown
+    const sortWrapper = document.createElement("div");
+    sortWrapper.className = "mb-4";
+
+    sortWrapper.innerHTML = `
+      <label for="sortPrice" class="mr-2">Sort by Price:</label>
+      <select id="sortPrice" class="border border-gray-300 p-1 rounded">
+        <option value="">Select</option>
+        <option value="asc">Low to High</option>
+        <option value="desc">High to Low</option>
+      </select>
+    `;
+
+    container.parentNode.insertBefore(sortWrapper, container);
+
+    document.getElementById("sortPrice").addEventListener("change", function () {
+      const order = this.value;
+      const cards = Array.from(container.getElementsByClassName("hotel-card"));
+
+      const sorted = cards.sort((a, b) => {
+        const priceA = parseFloat(a.querySelector(".price-details").getAttribute("data-price"));
+        const priceB = parseFloat(b.querySelector(".price-details").getAttribute("data-price"));
+        return order === "asc" ? priceA - priceB : priceB - priceA;
+      });
+
+      container.innerHTML = ""; // Clear current cards
+      sorted.forEach(card => container.appendChild(card)); // Append sorted
+    });
+  });
+</script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
