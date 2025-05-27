@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blog</title>
   <link rel="stylesheet" href="css/style_blog.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -57,11 +59,11 @@
 
 
 
-    <div class="reviews-section">
+    <div class="reviews-section " style="align-items: center;" >
       <div class="reviews-title">Guest Experiences & Reviews</div>
-      <div class="reviews-container">
+      <div class="reviews-container" >
         <!-- Review 1 -->
-        <div class="review-card">
+        <div class="review-card"  data-aos="zoom-in" >
           <div class="review-header">
             <img src="images/image_blog_avata1.png" alt="Avatar" class="review-avatar">
             <div>
@@ -76,7 +78,7 @@
         </div>
 
         <!-- Review 2 -->
-        <div class="review-card">
+        <div class="review-card"  data-aos="zoom-in">
           <div class="review-header">
             <img src="images/image_blog_avata1.png" alt="Avatar" class="review-avatar">
             <div>
@@ -91,7 +93,7 @@
         </div>
 
         <!-- Review 3 -->
-        <div class="review-card">
+        <div class="review-card"  data-aos="zoom-in"  >
           <div class="review-header">
             <img src="images/image_blog_avata3.png" alt="Avatar" class="review-avatar">
             <div>
@@ -106,7 +108,7 @@
         </div>
 
         <!-- Review 4 -->
-        <div class="review-card">
+        <div class="review-card"  data-aos="zoom-in">
           <div class="review-header">
             <img src="images/image_blog_avata4.png" alt="Avatar" class="review-avatar">
             <div>
@@ -126,5 +128,9 @@
 
   </div>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </html>
