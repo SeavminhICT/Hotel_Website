@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-.header {
+/* .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +15,7 @@ body {
     color: #fff;
     position: relative;
     z-index: 1000;
-}
+} */
 
 .header-logo img {
     width: 150px;
