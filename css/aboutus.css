@@ -74,16 +74,20 @@ header {
     z-index: 1000;
 }
 
+<<<<<<< HEAD
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+=======
+>>>>>>> af6c5b3a04c7d3c51217cfddeeed48bfa361d57b
 
 .logo img {
     height: 30px;
 }
 
+<<<<<<< HEAD
 nav ul {
     display: flex;
 }
@@ -98,6 +102,9 @@ nav ul li a {
     transition: color 0.3s;
 }
 
+=======
+
+>>>>>>> af6c5b3a04c7d3c51217cfddeeed48bfa361d57b
 
 
 .profile-img {
