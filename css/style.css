@@ -86,9 +86,9 @@ body {
     background-color: #fff;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     border-radius: 12px;
-    padding: 20px 40px;
+    padding: 10px 30px;
     display: flex;
-    gap: 40px;
+    gap: 20px;
     width: 80%;
     max-width: 1100px;
     z-index: 10;
@@ -131,7 +131,7 @@ body {
     border: none;
     border-bottom: none !important;
     border-radius: 0;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     outline: none;
     transition: border-color 0.3s ease;
     height: 28px;
@@ -147,7 +147,7 @@ body {
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 16px 16px;
-    padding-right: 36px;
+    padding-right: 50px;
 }
 
 .booking-item select option {
@@ -405,17 +405,19 @@ body {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
+    height: auto;
+    position: relative;
 }
 
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
     width: 100%;
 }
 
 .footer-logo img {
-    width: 150px;
+    width: 80px;
 }
 
 .footer-column {
