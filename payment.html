@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Information Page</title>
+  <link rel="stylesheet" href="css/payment.css" />
+</head>
+<body>
+  <!-- <header class="site-header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="#">Orchard Hotel</a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Rooms</a></li>
+          <li><a href="#">Meeting & Event</a></li>
+          <li><a href="#">Dining</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="book-now-btn">Book Now</a>
+    </div>
+  </header> -->
+
+  <main class="guest-info-page">
+    <div class="container guest-info-container">
+      <h1 class="page-title">GUEST INFORMATION</h1>
+      <div class="content-wrapper">
+        <!-- Booking Summary -->
+        <section class="booking-details">
+          <div class="booking-dates">
+            <p>WED, 6 SEP 2023 → 7 SEP 2023</p>
+            <p>1 Night | 1 Room, 1 Adult</p>
+          </div>
+          <div class="room-image">
+            <img src="images/room.jpg" alt="Standard room with queen bed and window view" />
+          </div>
+          <div class="room-info">
+            <p><strong>Standard Room</strong></p>
+            <p><strong>Total</strong> <span class="price">$50.00</span></p>
+          </div>
+        </section>
+
+        <!-- Guest and Payment Form -->
+        <section class="guest-payment-forms">
+          <form class="guest-info-form" action="#" method="post">
+            <fieldset>
+              <legend>Payment Information</legend>
+
+              <!-- Form Group -->
+              <div class="form-row">
+                <label for="email-address">Email Address*</label>
+                <input type="email" id="email-address" name="email-address" placeholder="john@example.com" required />
+              </div>
+
+              <div class="form-row">
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" placeholder="John" required />
+              </div>
+
+              <div class="form-row">
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Smith" required />
+              </div>
+
+              <div class="form-row">
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" placeholder="12345678" required />
+              </div>
+
+              <div class="form-row">
+                <label for="address-line-1">Address Line 1*</label>
+                <input type="text" id="address-line-1" name="address-line-1" placeholder="123 Street" required />
+              </div>
+
+              <div class="form-row">
+                <label for="address-line-2">Address Line 2</label>
+                <input type="text" id="address-line-2" name="address-line-2" placeholder="Apartment, suite, etc." />
+              </div>
+
+              <div class="form-row">
+                <label for="city">City*</label>
+                <input type="text" id="city" name="city" placeholder="City" required />
+              </div>
+
+              <div class="form-row">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="State" />
+              </div>
+
+              <div class="form-row">
+                <label for="zip-code">Zip Code</label>
+                <input type="text" id="zip-code" name="zip-code" placeholder="Zip Code" />
+              </div>
+
+              <div class="form-row">
+                <label for="country">Country*</label>
+                <input type="text" id="country" name="country" placeholder="Country" required />
+              </div>
+            </fieldset>
+
+            <!-- Payment Method Section -->
+            <h2 class="payment-method-heading">
+              PAYMENT METHOD
+              <span class="card-logos">
+                <img src="images/visa.jpg" alt="Visa" />
+                <img src="images/mastercard.jpg" alt="Mastercard" />
+                <img src="images/discover.jpg" alt="Discover" />
+              </span>
+            </h2>
+
+            <fieldset class="payment-method">
+              <div class="form-row">
+                <label for="card-name">Name on Card</label>
+                <input type="text" id="card-name" name="card-name" placeholder="John Smith" />
+              </div>
+
+              <div class="form-row">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="XXXX XXXX XXXX XXXX" />
+              </div>
+
+              <div class="form-row expiration-cvv-row">
+                <label>Expiration</label>
+                <div class="expiration-inputs">
+                  <input type="text" id="expiration-month" name="expiration-month" placeholder="MM" maxlength="2" />
+                  <input type="text" id="expiration-year" name="expiration-year" placeholder="YYYY" maxlength="4" />
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="XXX" maxlength="3" />
+              </div>
+              <p class="total-amount">
+                <strong>Total amount:</strong> <span class="amount">$50.00</span>
+                <small>(inclusive of tax & service charge)</small>
+              </p>
+            </fieldset>
+
+            <button type="submit" class="confirm-button">CONFIRM</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-contact">
+        <p>Contact</p>
+        <address>
+          26985 Brighton Lane,<br />
+          Lake Forest, CA 92630<br />
+          +1 401 111 000 321<br />
+          info@orchadhotel.com
+        </address>
+      </div>
+      <div class="footer-social">
+        <p>Connect with Us</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><img src="facebook-icon.png" alt="Facebook" /></a>
+          <a href="#" aria-label="Instagram"><img src="instagram-icon.png" alt="Instagram" /></a>
+          <a href="#" aria-label="Close"><img src="close-icon.png" alt="Close" /></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <p>Quick Links</p>
+        <ul>
+          <li><a href="#">Rooms</a></li>
+          <li><a href="#">Meeting & Events</a></li>
+          <li><a href="#">Dining</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright © 2023 The Orchard Hotel. All Rights Reserved.</p>
+    </div>
+  </footer> -->
+</body>
+</html>
