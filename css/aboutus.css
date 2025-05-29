@@ -1,18 +1,7 @@
 /* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    color: #333;
-    line-height: 1.5;
-}
 
 .container {
-    max-width: 1200px;
+    
     margin: 0 auto;
     padding: 0 20px;
     
@@ -65,54 +54,7 @@ p {
 
 
 /* Header Styles */
-header {
-    background-color: #2c3e50;
-    color: #fff;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
 
-<<<<<<< HEAD
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-=======
->>>>>>> af6c5b3a04c7d3c51217cfddeeed48bfa361d57b
-
-.logo img {
-    height: 30px;
-}
-
-<<<<<<< HEAD
-nav ul {
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 30px;
-}
-
-nav ul li a {
-    color: #fff;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-=======
-
->>>>>>> af6c5b3a04c7d3c51217cfddeeed48bfa361d57b
-
-
-.profile-img {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-}
 
 /* Hero Section Styles */
 .hero {
