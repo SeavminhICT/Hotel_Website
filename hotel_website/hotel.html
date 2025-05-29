@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hotel Cambodiana</title>
+    <link rel="stylesheet" href="hotel.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header / Navigation -->
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <p class="hero-subtitle">EXPERIENCE</p>
+            <h1 class="hero-title">Hotel Cambodiana</h1>
+            <p class="hero-description">An Iconic Hotel In the Heart of Phnom Penh</p>
+            <a href="#" class="btn btn-outline">BOOK A SUITE</a>
+        </div>
+        <!-- Booking form -->
+        <form class="booking-form container" aria-label="Booking form">
+            <div class="form-group">
+                <label for="checkin">Check-in</label>
+                <input type="date" id="checkin" name="checkin" />
+            </div>
+            <div class="form-group">
+                <label for="checkout">Check-out</label>
+                <input type="date" id="checkout" name="checkout" />
+            </div>
+            <div class="form-group">
+                <label for="adults">1 Adult</label>
+                <select id="adults" name="adults">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="children">0 Child</label>
+                <select id="children" name="children">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="promo">Promocode</label>
+                <input type="text" id="promo" name="promo" placeholder="Enter code" />
+            </div>
+            <button type="submit" class="btn btn-primary">CHECK AVAILABILITY</button>
+        </form>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="container welcome">
+        <div class="welcome-text">
+            <h2>WELCOME TO HOTEL CAMBODIANA</h2>
+            <h3>The Most <span class="highlight">Iconic</span> Hotel in Phnom Penh</h3>
+            <p>
+                A warm welcome to the Kingdom of Cambodia. Situated on the banks of the famous Mekong River, the magnificent Hotel Cambodiana is located in the heart of Phnom Penh's central business and tourist districts, offering all the conveniences access to all that Phnom Penh has to offer.
+            </p>
+            <p class="manager">
+                Hanno Stamm<br />
+                <span>GENERAL MANAGER, HOTEL CAMBODIANA</span>
+            </p>
+            <a href="#" class="btn btn-outline">EXPLORE MORE</a>
+        </div>
+        <div class="welcome-images">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Hotel exterior" />
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80" alt="Hotel exterior 2" />
+        </div>
+    </section>
+
+    <!-- Rooms & Suites Section -->
+    <section class="rooms container">
+        <h4 class="section-subtitle">HOTEL CAMBODIANA</h4>
+        <h2>Rooms & Suites</h2>
+        <div class="room-list">
+            <article class="room-card">
+                <img src="https://images.unsplash.com/photo-1560448070-8a1e3a0a1a1a?auto=format&fit=crop&w=800&q=80" alt="Deluxe City View" />
+                <div class="room-info">
+                    <span class="room-tag">DELUXE CITY VIEW</span>
+                </div>
+            </article>
+            <article class="room-card">
+                <img src="https://images.unsplash.com/photo-1501117716987-c8e6a7a3a1a1?auto=format&fit=crop&w=800&q=80" alt="Superior Rooms" />
+                <div class="room-info">
+                    <span class="room-tag">SUPERIOR ROOMS</span>
+                </div>
+            </article>
+            <article class="room-card">
+                <img src="https://images.unsplash.com/photo-1501183638714-8b2b43c8f2f9?auto=format&fit=crop&w=800&q=80" alt="Deluxe River View" />
+                <div class="room-info">
+                    <span class="room-tag">DELUXE RIVER VIEW</span>
+                </div>
+            </article>
+            <article class="room-card">
+                <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="Junior Suite" />
+                <div class="room-info">
+                    <span class="room-tag">JUNIOR SUITE</span>
+                </div>
+            </article>
+            <article class="room-card">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Executive Suite" />
+                <div class="room-info">
+                    <span class="room-tag">EXECUTIVE SUITE</span>
+                </div>
+            </article>
+        </div>
+        <a href="#" class="btn btn-outline rooms-explore">EXPLORE MORE</a>
+    </section>
+
+    <!-- Dining & Wining Section -->
+    <section class="dining dark-section container">
+        <h4 class="section-subtitle">DISCOVER OUR GOURMET RESTAURANTS</h4>
+        <h2>Dining &amp; Wining</h2>
+        <p class="dining-highlight">
+            Sip<span>.</span> Savour<span>.</span> See<span>.</span>
+        </p>
+        <p class="dining-description">
+            Indulge your days and ignite your nights in one of the Kingdom’s signature hotel restaurants and bar. Whether you want to go local, enjoy French cuisine, or slip on a cocktail, Hotel Cambodiana delivers the things you love, in a way you’ve never imagined possible.
+        </p>
+        <div class="dining-list">
+            <article class="dining-card">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="L'Amboise" />
+                <div class="dining-info">
+                    <h5>AUTHENTIC FRENCH CUISINE</h5>
+                    <h3>L'AMBOISE</h3>
+                    <p>
+                        Come and savour authentic French Cuisine in an enchanting setting. Our authentic French menu created by the Hotel’s renowned Executive Chef Song Tong, offers dishes that are simply delicious!
+                    </p>
+                    <ul>
+                        <li>Open daily for lunch & dinner</li>
+                        <li>Lunch: 12:00 pm – 2:30 pm</li>
+                        <li>Dinner: 6:00 pm – later</li>
+                        <li>Phone: +855-76 9 800 900</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-small">LEARN MORE</a>
+                </div>
+            </article>
+            <article class="dining-card">
+                <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80" alt="Mekong Restaurant" />
+                <div class="dining-info">
+                    <h5>INTERNATIONAL CUISINE</h5>
+                    <h3>MEKONG RESTAURANT</h3>
+                    <p>
+                        Ready from breakfast to dinner, choose from an international buffet or an À-La-Carte menu featuring European, Western, Asian and Khmer cuisine.
+                    </p>
+                    <ul>
+                        <li>Open daily for breakfast, lunch & dinner</li>
+                        <li>Breakfast: 6:00am – 10:30am</li>
+                        <li>Lunch: 12:00 pm – 2:30 pm</li>
+                        <li>Dinner: 6:00 pm – 10:00pm</li>
+                        <li>Phone: +855-76 9 800 900</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-small">LEARN MORE</a>
+                </div>
+            </article>
+            <article class="dining-card">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="La Brioche Bakery" />
+                <div class="dining-info">
+                    <h5>THE CITY’S MOST POPULAR BAKERY</h5>
+                    <h3>LA BRIOCHE BAKERY</h3>
+                    <p>
+                        The most famous bakery in town is perfect for those young and old who need their daily fix for Phnom Penh’s finest baked delicacies including Homemade Chocolates, Macaroons, cakes, pastries, made-to-order sandwiches and freshly baked breads.
+                    </p>
+                    <ul>
+                        <li>Open daily from 8am to 8pm</li>
+                        <li>Phone: +855-78 44 40 99</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-small">LEARN MORE</a>
+                </div>
+            </article>
+            <article class="dining-card">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Cambodiana Bar" />
+                <div class="dining-info">
+                    <h5>LOUNGE & BAR</h5>
+                    <h3>CAMBODIANA BAR</h3>
+                    <p>
+                        Offers the perfect setting to unwind after a full day of sightseeing or to hold a casual business meeting. Come & enjoy an early evening cocktail or after-work drink with colleagues or friends.
+                    </p>
+                    <ul>
+                        <li>Open daily from 8am onwards.</li>
+                        <li>Live Entertainment from Wednesday to Sunday from 8:30 PM – onwards</li>
+                        <li>Happy Hour (except bottles of spirits or wine) from 6:00 PM - 8:00 PM</li>
+                        <li>Phone: +855-76 9 800 900</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-small">LEARN MORE</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Swimming Pool Section -->
+    <section class="swimming container">
+        <h4 class="section-subtitle">RELAXING</h4>
+        <h2>Swimming Pool</h2>
+        <div class="swimming-content">
+            <div class="swimming-info">
+                <p><strong>Details</strong></p>
+                <p>Length: 15 m</p>
+                <p>Width: 6 m</p>
+                <p>7:00am – 9:00pm everyday</p>
+                <p>Call: +855-9 9 900 900</p>
+            </div>
+            <div class="swimming-description">
+                <p>
+                    After a day of meetings or sightseeing, refresh with a dip in our pool while enjoying breathtaking views of the Mekong river. Indoor is decorated with a jade and ebony stones during our poolside restaurant, specializing in wood-fired pizza or smoked meats daily delivered to a poolside and located in a sunny and casual setting.
+                </p>
+            </div>
+            <div class="swimming-images">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Swimming pool 1" />
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Swimming pool 2" />
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Swimming pool 3" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Gym Section -->
+    <section class="gym container">
+        <h4 class="section-subtitle">FITNESS CENTER</h4>
+        <h2>The Gym</h2>
+        <div class="gym-content">
+            <div class="gym-images">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Gym equipment 1" />
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Gym equipment 2" />
+            </div>
+            <div class="gym-info">
+                <p>
+                    We can help you make your summer workout effective and strong. Our team trains to make that possible. Eat, Sleep, Workout, Repeat!
+                </p>
+                <ul>
+                    <li>Open from 6 am to 11 pm daily</li>
+                    <li>Air-conditioned</li>
+                    <li>Qualified trainer and towels</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Facilities Section -->
+    <section class="facilities container">
+        <h4 class="section-subtitle">OTHER SERVICES</h4>
+        <h2>Hotel Facilities</h2>
+        <div class="facilities-list">
+            <div class="facility-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Mekong View Pool" />
+                <h5>Mekong View Pool</h5>
+                <p>Relaxing in our pool with stunning Mekong River views, open daily.</p>
+            </div>
+            <div class="facility-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Gym" />
+                <h5>Gym</h5>
+                <p>Effective workouts with a well-equipped fitness center open daily.</p>
+            </div>
+            <div class="facility-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Steam and Sauna" />
+                <h5>Steam and Sauna</h5>
+                <p>Deluxe and wide in steam and sauna to counteract intense rejuvenation.</p>
+            </div>
+            <div class="facility-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Laundry" />
+                <h5>Laundry</h5>
+                <p>Dry cleaning service, laundry facilities.</p>
+            </div>
+            <div class="facility-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Tennis" />
+                <h5>Tennis</h5>
+                <p>Play on standard-size courts, open from 9:00 am to 7:00 pm.</p>
+            </div>
+            <div class="facility-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Spa & Massage" />
+                <h5>Spa & Massage</h5>
+                <p>Pamper yourself with massages, aromatherapy and specialized beauty treatments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event & Function Halls Section -->
+    <section class="events container">
+        <h4 class="section-subtitle">CELEBRATE WITH HOTEL CAMBODIANA</h4>
+        <h2>Event & Function Halls</h2>
+        <div class="events-list">
+            <article class="event-card">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Grand Ballroom" />
+                <h3>GRAND BALLROOM</h3>
+                <p>850 sq. meters hall. The most accommodating up to 800 people in a theater style arrangement and 500 people for a cocktail style party.</p>
+                <a href="#" class="btn btn-outline btn-small">LEARN MORE</a>
+            </article>
+            <article class="event-card">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Tonle Chaktomuk" />
+                <h3>TONLE CHAKTOMUK</h3>
+                <p>Our most booked and preferred event venue. 256 Sq. meters hall, ideal for private event and product launching events.</p>
+                <a href="#" class="btn btn-outline btn-small">LEARN MORE</a>
+            </article>
+            <article class="event-card">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Tonle Mekong" />
+                <h3>TONLE MEKONG</h3>
+                <p>This event hall has 85% windows that can seat 120 people, ideal for close door meetings, small dinner occasions and more!</p>
+                <a href="#" class="btn btn-outline btn-small">LEARN MORE</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers dark-section container">
+        <h4 class="section-subtitle">BEST DEALS</h4>
+        <h2>Offers</h2>
+        <p class="offers-description">No promotion found. Follow our social media for latest news on offers and promotions.</p>
+        <a href="#" class="btn btn-outline btn-small">MORE DEALS</a>
+    </section>
+
+<!-- Guest Reviews Section -->
+<section class="reviews">
+    <div class="reviews-overlay"></div>
+    <div class="container reviews-content">
+        <h4 class="section-subtitle">HOTEL CAMBODIANA</h4>
+        <h2>What Guests' Say?</h2>
+        <div class="reviews-stars">
+            <span class="rating-text">GOOD</span>
+            <div class="stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+            </div>
+            <p class="reviews-count">Based on 1889 reviews</p>
+            <img class="google-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="Google" />
+        </div>
+        <div class="review-cards">
+            <article class="review-card">
+                <div class="review-header">
+                    <img class="review-avatar" src="../images/review1.png" alt="Reviewer Sam" />
+                    <div class="reviewer-info">
+                        <p class="review-author">Sam <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="Google" /></p>
+                        <span class="review-date">February 11, 2025</span>
+                    </div>
+                </div>
+                <div class="review-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                </div>
+                <p class="review-text">Comfortable bed and pillows. Clean and 4-star hotel.</p>
+            </article>
+            <article class="review-card">
+                <div class="review-header">
+                    <img class="review-avatar" src="../images/review2.png" alt="Reviewer Kalan" />
+                    <div class="reviewer-info">
+                        <p class="review-author">Kalan Ngo <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="Google" /></p>
+                        <span class="review-date">May 5, 2025</span>
+                    </div>
+                </div>
+                <div class="review-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                </div>
+                <p class="review-text">Good service</p>
+            </article>
+            <article class="review-card">
+                <div class="review-header">
+                    <img class="review-avatar" src="../images/review3.png" alt="Reviewer Sous" />
+                    <div class="reviewer-info">
+                        <p class="review-author">Sous Vannoeun <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="Google" /></p>
+                        <span class="review-date">January 20, 2021</span>
+                    </div>
+                </div>
+                <div class="review-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+                </div>
+                <p class="review-text">I absolutely love this hotel because it is beautifully situated by the riverside, allowing us to take leisurely walks behind the hotel and enjoy the scenic views. The room is quite ... <a href="#" class="read-more">Read more</a></p>
+            </article>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer dark-section">
+        <div class="container footer-content">
+            <div class="footer-left">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Hotel_Cambodiana_logo.svg/256px-Hotel_Cambodiana_logo.svg.png" alt="Hotel Cambodiana Logo" style="height:40px;" />
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#">Hotel Cambodiana Phnom Penh</a></li>
+                        <li><a href="#">Promotions & Offers</a></li>
+                        <li><a href="#">Functions</a></li>
+                        <li><a href="#">Nearby Attractions</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Career Opportunities</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-center">
+                <address>
+                    <strong>HOTEL CAMBODIANA</strong><br />
+                    313 Sisowath Quay, Chakto Mukh, Doun Penh,<br />
+                    Phnom Penh 120207, Kingdom of Cambodia<br />
+                    Tel: +855-76 9 800 900<br />
+                    Email: info@hotelcambodiana.com.kh<br />
+                    Reservation: reservation@hotelcambodiana.com.kh
+                </address>
+                <div class="social-icons">
+<a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Facebook-icon-1.png" alt="Facebook" style="width:28px; height:28px;" /></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" /></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046123.png" alt="TikTok" /></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <form class="newsletter-form" aria-label="Newsletter subscription">
+                    <label for="newsletter-email">Newsletter for Exclusive Promotional deals?</label>
+                    <div class="input-group">
+                      <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Enter your email address" />
+                      <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+                    </div>
+                </form>
+                <p class="privacy-note">
+                    This site is protected by reCAPTCHA and the Google
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and
+                    <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> apply.
+                </p>
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023 Hotel Cambodiana</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</html>
