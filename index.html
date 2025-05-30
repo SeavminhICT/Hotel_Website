@@ -29,7 +29,6 @@
   </head>
   <body>
     <!-- Header -->
-
     <nav class="sticky top-0 z-50 bg-white border-gray-200 dark:bg-gray-900">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
@@ -147,44 +146,65 @@
         <p>Discover the finest hotels from all over the world.</p>
       </div>
 
-      <div class="booking-bar">
-        <div class="booking-item destination">
-          <label
-            ><span class="icon">&#x1F4CD;</span> Where are you headed?</label
-          >
-          <select>
+      <div
+        class="max-w-5xl mx-auto bg-white p-6 rounded-lg shadow-md grid grid-cols-1 md:grid-cols-5 gap-4 sticky top-100 z-10"
+      >
+        <!-- Destination -->
+        <div class="flex flex-col">
+          <label class="text-sm text-gray-700 mb-1">
+            <span class="mr-1">&#x1F4CD;</span> Where are you headed?
+          </label>
+          <select class="border border-gray-300 rounded-md p-2 text-gray-700">
             <option>Singapore</option>
             <option>New York</option>
             <option>Tokyo</option>
           </select>
         </div>
-        <div class="booking-item checkin">
-          <label><span class="icon">&#x1F4C5;</span> Check in</label>
-          <div class="date-input-wrapper">
-            <input type="date" />
-            <span class="date-icon">&#x1F4C5;</span>
-          </div>
+
+        <!-- Check-in -->
+        <div class="flex flex-col">
+          <label class="text-sm text-gray-700 mb-1">
+            <span class="mr-1">&#x1F4C5;</span> Check in
+          </label>
+          <input
+            type="date"
+            class="border border-gray-300 rounded-md p-2 text-gray-700"
+          />
         </div>
-        <div class="booking-item checkout">
-          <label><span class="icon">&#x1F4C5;</span> Check out</label>
-          <div class="date-input-wrapper">
-            <input type="date" />
-            <span class="date-icon">&#x1F4C5;</span>
-          </div>
+
+        <!-- Check-out -->
+        <div class="flex flex-col">
+          <label class="text-sm text-gray-700 mb-1">
+            <span class="mr-1">&#x1F4C5;</span> Check out
+          </label>
+          <input
+            type="date"
+            class="border border-gray-300 rounded-md p-2 text-gray-700"
+          />
         </div>
-        <div class="booking-item rooms">
-          <label
-            ><span class="icon">&#x1F464;</span> Rooms | Adults, Children</label
-          >
-          <select>
+
+        <!-- Rooms -->
+        <div class="flex flex-col">
+          <label class="text-sm text-gray-700 mb-1">
+            <span class="mr-1">&#x1F464;</span> Rooms | Adults, Children
+          </label>
+          <select class="border border-gray-300 rounded-md p-2 text-gray-700">
             <option>01 | 02</option>
             <option>02 | 04</option>
             <option>03 | 06</option>
           </select>
         </div>
-        <a href="listhotel.html">
-          <button class="booking-button">Book Now</button>
-        </a>
+
+        <!-- Book Now Button -->
+        <div class="flex items-end">
+          <a href="listhotel.html" class="w-full">
+            <button
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md"
+            >
+              Book Now
+            </button>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -192,26 +212,20 @@
       <h2 class="section-title">Top Rated</h2>
       <div class="cards">
         <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
-            alt="Marseilles Beachfront Hotel"
-          />
+          <img src="images/1card.jpg" alt="Marseilles Beachfront Hotel" />
           <h3>Marseilles Beachfront Hotel</h3>
           <p class="price">$2024 <span>/ night</span></p>
           <p class="address">123 Street, City, Country</p>
         </div>
         <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80"
-            alt="Andronis Boutique Hotel"
-          />
+          <img src="images/2card.jpg" alt="Andronis Boutique Hotel" />
           <h3>Andronis Boutique Hotel</h3>
           <p class="price">$2024 <span>/ night</span></p>
           <p class="address">123 Street, City, Country</p>
         </div>
         <div class="card">
           <img
-            src="https://images.unsplash.com/photo-1501183638714-8b2b43b292b8?auto=format&fit=crop&w=400&q=80"
+            src="images/3card.jpg"
             alt="Waldorf Astoria Los Cabos Pedregal"
           />
           <h3>Waldorf Astoria Los Cabos Pedregal</h3>
@@ -219,10 +233,7 @@
           <p class="address">123 Street, City, Country</p>
         </div>
         <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=400&q=80"
-            alt="Deco Boutique Hotel"
-          />
+          <img src="images/4card.jpg" alt="Deco Boutique Hotel" />
           <h3>Deco Boutique Hotel</h3>
           <p class="price">$2024 <span>/ night</span></p>
           <p class="address">123 Street, City, Country</p>
@@ -232,26 +243,20 @@
       <h2 class="section-title">Category</h2>
       <div class="cards">
         <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
-            alt="Viroth's Hotel"
-          />
+          <img src="images/5card.jpg" alt="Viroth's Hotel" />
           <h3>Viroth's Hotel</h3>
           <p class="price">$2024 <span>/ night</span></p>
           <p class="address">123 Street, City, Country</p>
         </div>
         <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1501117716987-c8e6a7a3a3a3?auto=format&fit=crop&w=400&q=80"
-            alt="Hotel Best Auto Hogar"
-          />
+          <img src="images/6card.jpg" alt="Hotel Best Auto Hogar" />
           <h3>Hotel Best Auto Hogar</h3>
           <p class="price">$2024 <span>/ night</span></p>
           <p class="address">123 Street, City, Country</p>
         </div>
         <div class="card">
           <img
-            src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=400&q=80"
+            src="images/7card.jpg"
             alt="Trump International Hotel Washington D.C."
           />
           <h3>Trump International Hotel Washington D.C.</h3>
@@ -260,7 +265,7 @@
         </div>
         <div class="card">
           <img
-            src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80"
+            src="images/8card.jpg"
             alt="Kayakapi Premium Caves - Cappadocia"
           />
           <h3>Kayakapi Premium Caves - Cappadocia</h3>
@@ -406,6 +411,448 @@
         <!-- Add more room cards as needed -->
       </div>
     </div>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+      <div class="welcome-text">
+        <h2>WELCOME TO HOTEL CAMBODIA</h2>
+        <h3>The Most <span class="highlight">Iconic</span></h3>
+        <h3><span class="highlight">Hotel</span> in Phnom Penh</h3>
+        <p>
+          A warm welcome to the Kingdom of Cambodia. Situated on the banks of
+          the famous Mekong River, the magnificent Hotel Cambodiana is located
+          in the heart of Phnom Penh's central business and tourist districts,
+          offering all the conveniences access to all that Phnom Penh has to
+          offer.
+        </p>
+        <p class="manager">
+          Hanno Stamm<br />
+          <span>GENERAL MANAGER, HOTEL CAMBODIA</span>
+        </p>
+        <a href="#" class="btn btn-outline">EXPLORE MORE</a>
+      </div>
+      <div class="flex flex-col gap-5 flex-1 items-center">
+        <img
+          src="images/welcom1.jpg"
+          alt="Hotel exterior"
+          class="h-80 object-cover rounded shadow-md"
+        />
+        <img
+          src="images/welcom2.jpg"
+          alt="Hotel exterior 2"
+          class="h-80 object-cover rounded shadow-md"
+        />
+      </div>
+    </section>
+
+    <!-- Rooms & Suites Section -->
+    <section class="rooms">
+      <h4 class="section-subtitle">HOTEL CAMBODIA</h4>
+      <h2>Rooms & Suites</h2>
+      <div class="room-list">
+        <article class="room-card">
+          <img src="images/room1.jpg" alt="Deluxe City View" />
+          <div class="room-info">
+            <span class="room-tag">DELUXE CITY VIEW</span>
+          </div>
+        </article>
+        <article class="room-card">
+          <img src="images/room2.jpg" alt="Superior Rooms" />
+          <div class="room-info">
+            <span class="room-tag">SUPERIOR ROOMS</span>
+          </div>
+        </article>
+        <article class="room-card">
+          <img src="images/room3.jpg" alt="Deluxe River View" />
+          <div class="room-info">
+            <span class="room-tag">DELUXE RIVER VIEW</span>
+          </div>
+        </article>
+        <article class="room-card">
+          <img src="images/room4.jpg" alt="Junior Suite" />
+          <div class="room-info">
+            <span class="room-tag">JUNIOR SUITE</span>
+          </div>
+        </article>
+        <article class="room-card">
+          <img src="images/room5.jpg" alt="Executive Suite" />
+          <div class="room-info">
+            <span class="room-tag">EXECUTIVE SUITE</span>
+          </div>
+        </article>
+      </div>
+      <a href="#" class="btn btn-outline rooms-explore">EXPLORE MORE</a>
+    </section>
+
+    <!-- Dining & Wining Section -->
+    <section class="dining dark-section">
+      <h4 class="section-subtitle">DISCOVER OUR GOURMET RESTAURANTS</h4>
+      <h2>Dining &amp; Wining</h2>
+      <p class="dining-highlight">
+        Sip<span>.</span> Savour<span>.</span> See<span>.</span>
+      </p>
+      <p class="dining-description">
+        Indulge your days and ignite your nights in one of the Kingdom’s
+        signature hotel restaurants and bar. Whether you want to go local, enjoy
+        French cuisine, or slip on a cocktail, Hotel Cambodiana delivers the
+        things you love, in a way you’ve never imagined possible.
+      </p>
+      <div class="dining-list">
+        <article class="dining-card">
+          <img src="images/dining.jpg" alt="L'Amboise" />
+          <div class="dining-info">
+            <h5>AUTHENTIC FRENCH CUISINE</h5>
+            <h3>L'AMBOISE</h3>
+            <p>
+              Come and savour authentic French Cuisine in an enchanting setting.
+              Our authentic French menu created by the Hotel’s renowned
+              Executive Chef Song Tong, offers dishes that are simply delicious!
+            </p>
+            <ul>
+              <li>Open daily for lunch & dinner</li>
+              <li>Lunch: 12:00 pm – 2:30 pm</li>
+              <li>Dinner: 6:00 pm – later</li>
+              <li>Phone: +855-76 9 800 900</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-small">LEARN MORE</a>
+          </div>
+        </article>
+        <article class="dining-card">
+          <img src="images/dining2.jpg" alt="Mekong Restaurant" />
+          <div class="dining-info">
+            <h5>INTERNATIONAL CUISINE</h5>
+            <h3>MEKONG RESTAURANT</h3>
+            <p>
+              Ready from breakfast to dinner, choose from an international
+              buffet or an À-La-Carte menu featuring European, Western, Asian
+              and Khmer cuisine.
+            </p>
+            <ul>
+              <li>Open daily for breakfast, lunch & dinner</li>
+              <li>Breakfast: 6:00am – 10:30am</li>
+              <li>Lunch: 12:00 pm – 2:30 pm</li>
+              <li>Dinner: 6:00 pm – 10:00pm</li>
+              <li>Phone: +855-76 9 800 900</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-small">LEARN MORE</a>
+          </div>
+        </article>
+        <article class="dining-card">
+          <img src="images/bar.jpg" alt="La Brioche Bakery" />
+          <div class="dining-info">
+            <h5>THE CITY’S MOST POPULAR BAKERY</h5>
+            <h3>LA BRIOCHE BAKERY</h3>
+            <p>
+              The most famous bakery in town is perfect for those young and old
+              who need their daily fix for Phnom Penh’s finest baked delicacies
+              including Homemade Chocolates, Macaroons, cakes, pastries,
+              made-to-order sandwiches and freshly baked breads.
+            </p>
+            <ul>
+              <li>Open daily from 8am to 8pm</li>
+              <li>Phone: +855-78 44 40 99</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-small">LEARN MORE</a>
+          </div>
+        </article>
+        <article class="dining-card">
+          <img src="images/bar1.jpg" alt="Cambodiana Bar" />
+          <div class="dining-info">
+            <h5>LOUNGE & BAR</h5>
+            <h3>CAMBODIA BAR</h3>
+            <p>
+              Offers the perfect setting to unwind after a full day of
+              sightseeing or to hold a casual business meeting. Come & enjoy an
+              early evening cocktail or after-work drink with colleagues or
+              friends.
+            </p>
+            <ul>
+              <li>Open daily from 8am onwards.</li>
+              <li>
+                Live Entertainment from Wednesday to Sunday from 8:30 PM –
+                onwards
+              </li>
+              <li>
+                Happy Hour (except bottles of spirits or wine) from 6:00 PM -
+                8:00 PM
+              </li>
+              <li>Phone: +855-76 9 800 900</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-small">LEARN MORE</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Swimming Pool Section -->
+    <section class="swimming">
+      <h4 class="section-subtitle">RELAXING</h4>
+      <h1>Swimming Pool</h1>
+      <div class="swimming-content">
+        <div class="swimming-info">
+          <p>Details</p>
+          <p>Length: 15 m</p>
+          <p>Width: 6 m</p>
+          <p>7:00am – 9:00pm everyday</p>
+          <p>Call: +855-9 9 900 900</p>
+        </div>
+        <div class="swimming-description">
+          <p>
+            After a day of meetings or sightseeing, refresh with a dip in our
+            pool while enjoying breathtaking views of the Mekong river. Indoor
+            is decorated with a jade and ebony stones during our poolside
+            restaurant, specializing in wood-fired pizza or smoked meats daily
+            delivered to a poolside and located in a sunny and casual setting.
+          </p>
+        </div>
+        <div class="swimming-images">
+          <img src="images/swim1.jpg" alt="Swimming pool 1" />
+          <img src="images/swim2.jpg" alt="Swimming pool 2" />
+          <img src="images/swim3.jpg" alt="Swimming pool 3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Gym Section -->
+    <section class="gym container">
+      <h4 class="section-subtitle">FITNESS CENTER</h4>
+      <h2>The Gym</h2>
+      <div class="gym-content">
+        <div class="flex flex-col gap-5 flex-1 items-center">
+          <img
+            src="images/gym.jpg"
+            alt="Gym equipment 1"
+            class="w-100 h-80 object-cover rounded shadow-md"
+          />
+          <img
+            src="images/gym4.jpg"
+            alt="Gym equipment 2"
+            class="w-110 h-80 object-cover rounded shadow-md"
+          />
+        </div>
+
+        <div class="gym-info">
+          <p>
+            We can help you make your summer workout effective and strong. Our
+            team trains to make that possible. Eat, Sleep, Workout, Repeat!
+          </p>
+          <ul>
+            <li>Open from 6 am to 11 pm daily</li>
+            <li>Air-conditioned</li>
+            <li>Qualified trainer and towels</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotel Facilities Section -->
+    <section class="facilities">
+      <h4 class="section-subtitle">OTHER SERVICES</h4>
+      <h2>Hotel Facilities</h2>
+      <div class="facilities-list">
+        <div class="facility-item">
+          <img src="images/icon1.jpg" alt="Mekong View Pool" />
+          <h5>Mekong View Pool</h5>
+          <p>
+            Relaxing in our pool with stunning Mekong River views, open daily.
+          </p>
+        </div>
+        <div class="facility-item">
+          <img src="images/gymicon.jpg" alt="Gym" />
+          <h5>Gym</h5>
+          <p>
+            Effective workouts with a well-equipped fitness center open daily.
+          </p>
+        </div>
+        <div class="facility-item">
+          <img src="images/steamicon.jpg" alt="Steam and Sauna" />
+          <h5>Steam and Sauna</h5>
+          <p>
+            Deluxe and wide in steam and sauna to counteract intense
+            rejuvenation.
+          </p>
+        </div>
+        <div class="facility-item">
+          <img src="images/Laundry.jpg" alt="Laundry" />
+          <h5>Laundry</h5>
+          <p>Dry cleaning service, laundry facilities.</p>
+        </div>
+        <div class="facility-item">
+          <img src="images/tennis.jpg" alt="Tennis" />
+          <h5>Tennis</h5>
+          <p>Play on standard-size courts, open from 9:00 am to 7:00 pm.</p>
+        </div>
+        <div class="facility-item">
+          <img src="images/spa&message.jpg" alt="Spa & Massage" />
+          <h5>Spa & Massage</h5>
+          <p>
+            Pamper yourself with massages, aromatherapy and specialized beauty
+            treatments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event & Function Halls Section -->
+    <section class="events">
+      <h4 class="section-subtitle">CELEBRATE WITH HOTEL CAMBODIA</h4>
+      <h2>Event & Function Halls</h2>
+      <div class="events-list">
+        <article class="event-card">
+          <img
+            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80"
+            alt="Grand Ballroom"
+          />
+          <h3>GRAND BALLROOM</h3>
+          <p>
+            850 sq. meters hall. The most accommodating up to 800 people in a
+            theater style arrangement and 500 people for a cocktail style party.
+          </p>
+          <a href="#" class="btn btn-outline btn-small">LEARN MORE</a>
+        </article>
+        <article class="event-card">
+          <img
+            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80"
+            alt="Tonle Chaktomuk"
+          />
+          <h3>TONLE CHAKTOMUK</h3>
+          <p>
+            Our most booked and preferred event venue. 256 Sq. meters hall,
+            ideal for private event and product launching events.
+          </p>
+          <a href="#" class="btn btn-outline btn-small">LEARN MORE</a>
+        </article>
+        <article class="event-card">
+          <img
+            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80"
+            alt="Tonle Mekong"
+          />
+          <h3>TONLE MEKONG</h3>
+          <p>
+            This event hall has 85% windows that can seat 120 people, ideal for
+            close door meetings, small dinner occasions and more!
+          </p>
+          <a href="#" class="btn btn-outline btn-small">LEARN MORE</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers dark-section container">
+      <h4 class="section-subtitle">BEST DEALS</h4>
+      <h2>Offers</h2>
+      <p class="offers-description">
+        No promotion found. Follow our social media for latest news on offers
+        and promotions.
+      </p>
+      <a href="#" class="btn btn-outline btn-small">MORE DEALS</a>
+    </section>
+
+    <!-- Guest Reviews Section -->
+    <section class="reviews">
+      <div class="reviews-overlay"></div>
+      <div class="container reviews-content">
+        <h4 class="section-subtitle">HOTEL CAMBODIA</h4>
+        <h2>What Guests' Say?</h2>
+        <div class="reviews-stars">
+          <span class="rating-text">GOOD</span>
+          <div class="stars">
+            <span>★</span><span>★</span><span>★</span><span>★</span
+            ><span>☆</span>
+          </div>
+          <p class="reviews-count">Based on 1889 reviews</p>
+          <img
+            class="google-logo"
+            src="images/google_PNG19625.png"
+            alt="Google"
+          />
+        </div>
+        <div class="review-cards">
+          <article class="review-card">
+            <div class="review-header">
+              <img
+                class="review-avatar"
+                src="images/profile.jpg"
+                alt="Reviewer Sam"
+              />
+              <div class="reviewer-info">
+                <p class="review-author">
+                  Sam
+                  <img
+                    class="google-icon"
+                    src="images/google.jpg"
+                    alt="Google"
+                  />
+                </p>
+                <span class="review-date">February 11, 2025</span>
+              </div>
+            </div>
+            <div class="review-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>☆</span>
+            </div>
+            <p class="review-text">
+              Comfortable bed and pillows. Clean and 4-star hotel.
+            </p>
+          </article>
+          <article class="review-card">
+            <div class="review-header">
+              <img
+                class="review-avatar"
+                src="images/profile1.jpg"
+                alt="Reviewer Kalan"
+              />
+              <div class="reviewer-info">
+                <p class="review-author">
+                  Kalan Ngo
+                  <img
+                    class="google-icon"
+                    src="images/google.jpg"
+                    alt="Google"
+                  />
+                </p>
+                <span class="review-date">May 5, 2025</span>
+              </div>
+            </div>
+            <div class="review-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>☆</span>
+            </div>
+            <p class="review-text">Good service</p>
+          </article>
+          <article class="review-card">
+            <div class="review-header">
+              <img
+                class="review-avatar"
+                src="images/profile2.jpg"
+                alt="Reviewer Sous"
+              />
+              <div class="reviewer-info">
+                <p class="review-author">
+                  Sous Vannoeun
+                  <img
+                    class="google-icon"
+                    src="images/google.jpg"
+                    alt="Google"
+                  />
+                </p>
+                <span class="review-date">January 20, 2021</span>
+              </div>
+            </div>
+            <div class="review-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>☆</span>
+            </div>
+            <p class="review-text">
+              I absolutely love this hotel because it is beautifully situated by
+              the riverside, allowing us to take leisurely walks behind the
+              hotel and enjoy the scenic views. The room is quite ...
+              <a href="#" class="read-more">Read more</a>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <div class="footer-content">

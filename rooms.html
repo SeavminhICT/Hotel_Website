@@ -1,286 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/rooms.css" />
-    <link rel="stylesheet" href="css/root.css" />
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Flowbite CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-  </head>
-  <body>
-    <nav class="sticky top-0 z-50 bg-white border-gray-200 dark:bg-gray-900">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <!-- Logo -->
-        <a
-          href="index.html"
-          class="flex items-center space-x-3 rtl:space-x-reverse hover:opacity-80 transition-opacity"
-        >
-          <img
-            src="images/logo.png"
-            class="h-16 w-auto rounded-lg shadow-lg"
-            alt="Flowbite Logo"
-          />
-          <span
-            class="self-center text-2xl font-bold whitespace-nowrap text-gray-800 dark:text-white"
-            >The Grand Aurum</span
-          >
-        </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxury Hotels - Book your stay and enjoy luxury redefined at the most affordable rates.">
+    <title>Service</title>
+      <link rel="stylesheet" href="css/rooms.css">
+      <link rel="stylesheet" href="css/root.css">
+      <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Flowbite CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">   
+    </head>
+<body>
+           <nav class="sticky top-0 z-50 bg-white border-gray-200 dark:bg-gray-900">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    
+    <!-- Logo -->
+<a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse hover:opacity-80 transition-opacity">
+  <img src="images/logo.png" class="h-16 w-auto rounded-lg shadow-lg" alt="Flowbite Logo" />
+  <span class="self-center text-2xl font-bold whitespace-nowrap text-gray-800 dark:text-white">The Grand Aurum</span>
+</a>
 
-        <!-- Date/Time -->
-        <span
-          id="datetimenow"
-          class="text-sm text-gray-600 dark:text-gray-300"
-        ></span>
+    <!-- Date/Time -->
+    <span id="datetimenow" class="text-sm text-gray-600 dark:text-gray-300"></span>
 
-        <!-- Hamburger Button -->
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
+    <!-- Hamburger Button -->
+    <button  data-collapse-toggle="navbar-default" type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700"
+      aria-controls="navbar-default" aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
 
-        <!-- Navigation Menu -->
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gray-50 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-          >
-            <li>
-              <a
-                href="index.html"
-                class="active hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="myBookings.html"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500"
-                >My Booking</a
-              >
-            </li>
-            <li>
-              <a
-                href="aboutus.html"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500"
-                >About US</a
-              >
-            </li>
-            <li>
-              <a
-                href="rooms.html"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500"
-                >Room</a
-              >
-            </li>
-            <li>
-              <a
-                href="service.html"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                href="blog.html"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                href="contaceUS.html"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500"
-                >Contact US</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <section class="hero">
-      <div class="hero-content">
-        <div class="logo">
-          <div class="logo-container">
-            <span class="logo-text">LUXURY</span>
-            <span class="logo-subtext">HOTELS</span>
-          </div>
-        </div>
-        <div class="hero-text">
-          <h1>WELCOME TO</h1>
-          <h2>LUXURY</h2>
-          <h3>HOTELS</h3>
-          <p>
-            Book your stay and enjoy Luxury<br />
-            redefined at the most affordable rates.
-          </p>
-        </div>
+    <!-- Navigation Menu -->
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul
+        class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gray-50 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li><a href="index.html"
+            class=" active hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+            aria-current="page">Home</a></li>
+        <li><a href="myBookings.html"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">My Booking</a>
+        </li>
+        <li><a href="aboutus.html"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">About US</a>
+        </li>
+        <li><a href="rooms.html"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Room</a>
+        </li>
+        <li><a href="service.html"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Services</a>
+        </li>
+                <li><a href="blog.html"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Blog</a>
+        </li>
+        <li><a href="contaceUS.html"
+            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Contact
+            US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+      <section class="hero">
+        <div class="hero-content">
+            <div class="logos">
+                <div class="logos-container">
+                    <span class="logos-text">LUXURY</span>
+                    <span class="logos-subtext">HOTELS</span>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1>WELCOME TO</h1>
+                <h2>LUXURY</h2>
+                <h3>HOTELS</h3>
+               <p>Book your stay and enjoy Luxury<br>
+                redefined at the most affordable rates.</p>
+            </div>
         <div class="booking-container">
-          <div class="booking-wrapper">
-            <button class="book-btn">
-              <img
-                src="images/booking.png"
-                alt="Booking Icon"
-                class="booking-icon"
-              />
-              <span>BOOK NOW</span>
-            </button>
-          </div>
+        <div class="booking-wrapper">
+        <button class="book-btn">
+            <img src="images/booking.png" alt="Booking Icon" class="booking-icon">
+            <span>BOOK NOW</span>
+        </button>
+            </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-arrow">
+                    <img src="images/down-chevron.png" alt="Scroll Icon">
+                </div>
+            </div>
         </div>
-        <div class="scroll-indicator">
-          <span>Scroll</span>
-          <div class="scroll-arrow">
-            <img src="images/down-chevron.png" alt="Scroll Icon" />
-          </div>
-        </div>
-      </div>
     </section>
-    <section class="facilities">
-      <div class="container">
+<section class="facilities">
+    <div class="container">
         <h2 class="section-title">ROOMS AND RATES</h2>
         <p class="section-description">
-          Each of our bright, light-flooded rooms come with everything you could
-          possibly need for a comfortable stay. And yes, comfort isn't our only
-          objective, we also value good design, sleek contemporary furnishing
-          complemented by the rich tones of nature's palette as visible from our
-          rooms' sea-view windows and terraces.
+            Each of our bright, light-flooded rooms come with everything you could possibly need for a comfortable stay.
+            And yes, comfort isn't our only objective, we also value good design, 
+            sleek contemporary furnishing complemented by the rich tones of nature's palette as visible from our rooms' sea-view windows and terraces.
         </p>
         <div class="room-cards">
-          <div class="room-card">
-            <div class="room-image-slider">
-              <div class="slides">
-                <img
-                  src="images/singleroom1.jpg"
-                  alt="Single Room"
-                  class="active"
-                />
-                <img src="images/singleroom2.jpg" alt="Single Room" />
-                <img src="images/singleroom3.jpg" alt="Single Room" />
-              </div>
-              <div class="slider-navigation">
-                <span class="nav-dot active"></span>
-                <span class="nav-dot"></span>
-                <span class="nav-dot"></span>
-              </div>
-              <div class="room-title-overlay">SINGLE ROOM</div>
-              <div class="room-actions">
-                <button class="details-btn">
-                  <img src="images/add.png" alt="Plus Icon" class="plus-icon" />
-                  <span>VIEW ROOM DETAILS</span>
-                </button>
-                <span class="price-tag">$149.99 Avg/night</span>
-              </div>
+            <div class="room-card">
+                <div class="room-image-slider">
+                    <div class="slides">
+                        <img src="images/singleroom1.jpg" alt="Single Room" class="active">
+                        <img src="images/singleroom2.jpg" alt="Single Room">
+                        <img src="images/singleroom3.jpg" alt="Single Room">
+                    </div>
+                    <div class="slider-navigation">
+                        <span class="nav-dot active"></span>
+                        <span class="nav-dot"></span>
+                        <span class="nav-dot"></span>
+                    </div>
+                    <div class="room-title-overlay">SINGLE ROOM</div>
+                    <div class="room-actions">
+                        <button class="details-btn">
+                        <img src="images/add.png" alt="Plus Icon" class="plus-icon">
+                        <span>VIEW ROOM DETAILS</span>
+                        </button>
+                        <span class="price-tag">$149.99 Avg/night</span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
         <div class="room-cards">
-          <div class="room-card">
-            <div class="room-image-slider">
-              <div class="slides">
-                <img
-                  src="images/doubleroom1.jpg"
-                  alt="Single Room"
-                  class="active"
-                />
-                <img src="images/doubleroom2.jpg" alt="Single Room" />
-                <img src="images/doubleroom3.jpg" alt="Single Room" />
-              </div>
-              <div class="slider-navigation">
-                <span class="nav-dot active"></span>
-                <span class="nav-dot"></span>
-                <span class="nav-dot"></span>
-              </div>
-              <div class="room-title-overlay">DOUBLE ROOM</div>
-              <div class="room-actions">
-                <button class="details-btn">
-                  <img src="images/add.png" alt="Plus Icon" class="plus-icon" />
-                  <span>VIEW ROOM DETAILS</span>
-                </button>
-                <span class="price-tag">$179.99 Avg/night</span>
-              </div>
+            <div class="room-card">
+                <div class="room-image-slider">
+                    <div class="slides">
+                        <img src="images/doubleroom1.jpg" alt="Single Room" class="active">
+                        <img src="images/doubleroom2.jpg" alt="Single Room">
+                        <img src="images/doubleroom3.jpg" alt="Single Room">
+                    </div>
+                    <div class="slider-navigation">
+                        <span class="nav-dot active"></span>
+                        <span class="nav-dot"></span>
+                        <span class="nav-dot"></span>
+                    </div>
+                    <div class="room-title-overlay">DOUBLE ROOM</div>
+                    <div class="room-actions">
+                        <button class="details-btn">
+                        <img src="images/add.png" alt="Plus Icon" class="plus-icon">
+                        <span>VIEW ROOM DETAILS</span>
+                        </button>
+                        <span class="price-tag">$179.99 Avg/night</span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
         <div class="room-cards">
-          <div class="room-card">
-            <div class="room-image-slider">
-              <div class="slides">
-                <img
-                  src="images/twinroom2.jpg"
-                  alt="Single Room"
-                  class="active"
-                />
-                <img src="images/twinroom2.jpg" alt="Single Room" />
-                <img src="images/twinroom3.jpg" alt="Single Room" />
-              </div>
-              <div class="slider-navigation">
-                <span class="nav-dot active"></span>
-                <span class="nav-dot"></span>
-                <span class="nav-dot"></span>
-              </div>
-              <div class="room-title-overlay">TWIN ROOM</div>
-              <div class="room-actions">
-                <button class="details-btn">
-                  <img src="images/add.png" alt="Plus Icon" class="plus-icon" />
-                  <span>VIEW ROOM DETAILS</span>
-                </button>
-                <span class="price-tag">$199.99 Avg/night</span>
-              </div>
+            <div class="room-card">
+                <div class="room-image-slider">
+                    <div class="slides">
+                        <img src="images/twinroom2.jpg" alt="Single Room" class="active">
+                        <img src="images/twinroom2.jpg" alt="Single Room">
+                        <img src="images/twinroom3.jpg" alt="Single Room">
+                    </div>
+                    <div class="slider-navigation">
+                        <span class="nav-dot active"></span>
+                        <span class="nav-dot"></span>
+                        <span class="nav-dot"></span>
+                    </div>
+                    <div class="room-title-overlay"> TWIN ROOM</div>
+                    <div class="room-actions">
+                        <button class="details-btn">
+                        <img src="images/add.png" alt="Plus Icon" class="plus-icon">
+                        <span>VIEW ROOM DETAILS</span>
+                        </button>
+                        <span class="price-tag">$199.99 Avg/night</span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="footer">
-        <h2 class="section-title">Testimonials</h2>
-        <p class="section-description">
-          "Calm, Serene, Retro – What a way to relax and enjoy"
-        </p>
-        <p class="testimonial-author">Mr. and Mrs. Baxter, UK</p>
-        <div class="testimonial-nav">
-          <button class="testimonial-btn">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button class="testimonial-btn">
-            <i class="fas fa-chevron-right"></i>
-          </button>
+    </div>  
+    <div class ="footer">
+    <h2 class="section-title">Testimonials</h2>
+    <p class="section-description">
+    "Calm, Serene, Retro – What a way to relax and enjoy"
+    </p>
+    <p class="testimonial-author">Mr. and Mrs. Baxter, UK</p>
+    <div class="testimonial-nav">
+    <button class="testimonial-btn"><i class="fas fa-chevron-left"></i></button>
+    <button class="testimonial-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+</div>
+</section>
+            <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="logo">
+                    <img src="images/logo.png"  class="footer-logo">
+                    <span class="logo-text">The Grand Aurum</span>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Company Overview</a></li>
+                    <li><a href="#">Our Mission & Values</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                    <li><a href="#">Cancellation Policy</a></li>
+                    <li><a href="#">Booking Policies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Last-Minute Deals</a></li>
+                    <li><a href="#">Travel Guides</a></li>
+                    <li><a href="#">Blog & Travel Tips</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Feedback & Suggestions</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Membership</h3>
+                <ul>
+                    <li><a href="#">Loyalty Program</a></li>
+                    <li><a href="#">Limited Exclusive Offers</a></li>
+                    <li><a href="#">Rewards & Benefits</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </section>
-  </body>
-  <script src="javascript/header.js"></script>
+        
+        <div class="footer-bottom">
+            <div>© 2024 Logoipsum. All rights reserved.</div>
+            
+            <div class="social-icons">
+                <div class="social-icon">
+                    <img src="images/twitter.png" >
+                </div>
+                <div class="social-icon">
+                    <img src="images/linkedin.png" >
+                </div>
+                <div class="social-icon">
+                    <img src="images/whatsapp.png" >
+                </div>
+                <div class="social-icon">
+                    <img src="images/facebook.png" >
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="javascript/header.js"></script>
 </html>
