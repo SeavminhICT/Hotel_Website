@@ -52,11 +52,45 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
   }
   
-  .footer-logo {
-    height: 18px;
+.footer-logo {
+    height: 150px;
+    width:150px ;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
     margin-right: 8px;
-    filter: brightness(0) invert(1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-logo {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+       display: flex;
+    align-items: center;
+    justify-content: center;
   }
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 12px;
+    margin-right: 4px;
+       display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
   
   .footer-bottom {
     display: flex;
