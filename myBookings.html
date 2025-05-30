@@ -74,51 +74,13 @@
     <p class="text-gray-600 mb-6">Below is a list of all your upcoming and past hotel bookings.</p>
 
     <!-- Booking Card -->
-    <div class="bg-white rounded-lg shadow p-4 mb-4 flex flex-col md:flex-row gap-4 items-center">
-      <img src="https://via.placeholder.com/150" alt="Hotel" class="w-32 h-24 object-cover rounded">
-      <div class="flex-1">
-        <h5 class="text-lg font-semibold">Grand Palace Hotel</h5>
-        <p class="text-sm text-gray-500">Paris, France</p>
-      </div>
-      <div class="text-sm">
-        <p><strong>12 May 2025</strong></p>
-        <p class="text-gray-500">2 nights, Deluxe Room</p>
-      </div>
-      <span class="px-3 py-1 text-green-700 bg-green-100 rounded-full text-sm font-medium">Paid</span>
-      <div class="text-right font-semibold text-blue-600">$340</div>
-       <div id="qrcode" class="w-24 h-24"></div>
-    </div>
+    
 
-    <div class="bg-white rounded-lg shadow p-4 mb-4 flex flex-col md:flex-row gap-4 items-center">
-      <img src="https://via.placeholder.com/150" alt="Hotel" class="w-32 h-24 object-cover rounded">
-      <div class="flex-1">
-        <h5 class="text-lg font-semibold">Riverside Resort</h5>
-        <p class="text-sm text-gray-500">Bangkok, Thailand</p>
-      </div>
-      <div class="text-sm">
-        <p><strong>28 Apr 2025</strong></p>
-        <p class="text-gray-500">3 nights, Standard Room</p>
-      </div>
-      <span class="px-3 py-1 text-red-700 bg-red-100 rounded-full text-sm font-medium">Cancelled</span>
-      <div class="text-right font-semibold text-gray-400 line-through">$270</div>
-    </div>
+    
 
-    <div class="bg-white rounded-lg shadow p-4 mb-4 flex flex-col md:flex-row gap-4 items-center">
-      <img src="https://via.placeholder.com/150" alt="Hotel" class="w-32 h-24 object-cover rounded">
-      <div class="flex-1">
-        <h5 class="text-lg font-semibold">Sea Cloud Beach Resort</h5>
-        <p class="text-sm text-gray-500">Miami, USA</p>
-      </div>
-      <div class="text-sm">
-        <p><strong>18 Mar 2025</strong></p>
-        <p class="text-gray-500">5 nights, Suite</p>
-      </div>
-      <span class="px-3 py-1 text-green-700 bg-green-100 rounded-full text-sm font-medium">Paid</span>
-      <div class="text-right font-semibold text-blue-600">$750</div>
-    </div>
     <!-- Booking 1 -->
 <div onclick="showDetails(3)" class="cursor-pointer bg-white rounded-lg shadow p-4 mb-4 flex flex-col md:flex-row gap-4 items-center hover:shadow-lg transition">
-  <img src="https://via.placeholder.com/150" alt="Hotel" class="w-32 h-24 object-cover rounded">
+  <img src="images/room-1.png" alt="Hotel" class="w-32 h-24 object-cover rounded">
   <div class="flex-1">
     <h5 class="text-lg font-semibold">Ocean Breeze Hotel</h5>
     <p class="text-sm text-gray-500">Barcelona, Spain</p>
@@ -133,7 +95,7 @@
 
 <!-- Booking 2 -->
 <div onclick="showDetails(4)" class="cursor-pointer bg-white rounded-lg shadow p-4 mb-4 flex flex-col md:flex-row gap-4 items-center hover:shadow-lg transition">
-  <img src="https://via.placeholder.com/150" alt="Hotel" class="w-32 h-24 object-cover rounded">
+  <img src="images/room-2.png" alt="Hotel" class="w-32 h-24 object-cover rounded">
   <div class="flex-1">
     <h5 class="text-lg font-semibold">Mountain View Inn</h5>
     <p class="text-sm text-gray-500">Zermatt, Switzerland</p>
@@ -148,7 +110,7 @@
 
 <!-- Booking 3 -->
 <div onclick="showDetails(5)" class="cursor-pointer bg-white rounded-lg shadow p-4 mb-4 flex flex-col md:flex-row gap-4 items-center hover:shadow-lg transition">
-  <img src="https://via.placeholder.com/150" alt="Hotel" class="w-32 h-24 object-cover rounded">
+  <img src="images/room-3.png" alt="Hotel" class="w-32 h-24 object-cover rounded">
   <div class="flex-1">
     <h5 class="text-lg font-semibold">Sunset Bay Resort</h5>
     <p class="text-sm text-gray-500">Phuket, Thailand</p>
@@ -163,7 +125,7 @@
 
 <!-- Booking 4 -->
 <div onclick="showDetails(6)" class="cursor-pointer bg-white rounded-lg shadow p-4 mb-4 flex flex-col md:flex-row gap-4 items-center hover:shadow-lg transition">
-  <img src="https://via.placeholder.com/150" alt="Hotel" class="w-32 h-24 object-cover rounded">
+  <img src="images/room-4.png" alt="Hotel" class="w-32 h-24 object-cover rounded">
   <div class="flex-1">
     <h5 class="text-lg font-semibold">Emerald City Stay</h5>
     <p class="text-sm text-gray-500">Seattle, USA</p>
@@ -178,7 +140,7 @@
 
 <!-- Booking 5 -->
 <div onclick="showDetails(7)" class="cursor-pointer bg-white rounded-lg shadow p-4 mb-4 flex flex-col md:flex-row gap-4 items-center hover:shadow-lg transition">
-  <img src="https://via.placeholder.com/150" alt="Hotel" class="w-32 h-24 object-cover rounded">
+  <img src="images/room-4.png" alt="Hotel" class="w-32 h-24 object-cover rounded">
   <div class="flex-1">
     <h5 class="text-lg font-semibold">Urban Comfort Suites</h5>
     <p class="text-sm text-gray-500">Tokyo, Japan</p>
@@ -397,7 +359,7 @@
         nights: "2 nights, Deluxe Room",
         status: "Paid",
         price: "$340",
-        image: "https://via.placeholder.com/150"
+        image: "images/room-1.png"
       },
       {
         name: "Riverside Resort",
@@ -406,7 +368,7 @@
         nights: "3 nights, Standard Room",
         status: "Cancelled",
         price: "$270",
-        image: "https://via.placeholder.com/150"
+        image: "images/room-1.png"
       },
       {
         name: "Sea Cloud Beach Resort",
@@ -415,7 +377,7 @@
         nights: "5 nights, Suite",
         status: "Paid",
         price: "$750",
-        image: "https://via.placeholder.com/150"
+        image: "images/room-1.png"
       },
       {
       name: "Grand Palace Hotel",
@@ -424,7 +386,7 @@
       nights: "2 nights, Deluxe Room",
       status: "Paid",
       price: "$340",
-      image: "https://via.placeholder.com/150"
+      image: "images/room-1.png"
     },
     {
       name: "Riverside Resort",
@@ -433,7 +395,7 @@
       nights: "3 nights, Standard Room",
       status: "Cancelled",
       price: "$270",
-      image: "https://via.placeholder.com/150"
+      image: "images/room-2.png"
     },
     {
       name: "Sea Cloud Beach Resort",
@@ -442,7 +404,7 @@
       nights: "5 nights, Suite",
       status: "Paid",
       price: "$750",
-      image: "https://via.placeholder.com/150"
+      image: "images/room-3.png"
     },
     {
       name: "Ocean Breeze Hotel",
@@ -451,7 +413,7 @@
       nights: "3 nights, Deluxe Room",
       status: "Paid",
       price: "$837",
-      image: "https://via.placeholder.com/150"
+      image: "images/room-4.png"
     },
     {
       name: "Mountain View Inn",
@@ -460,7 +422,7 @@
       nights: "4 nights, Zen Suite",
       status: "Paid",
       price: "$659",
-      image: "https://via.placeholder.com/150"
+      image: "images/room-5.png"
     },
     {
       name: "Sunset Bay Resort",
@@ -597,5 +559,6 @@
   </script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="javascript/header.js"></script>
 </body>
 </html>
