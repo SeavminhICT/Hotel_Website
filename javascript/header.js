@@ -44,3 +44,25 @@ document.getElementById("footer-text").innerHTML = `&copy; ${year} Ascenda. All 
 
   setInterval(updateDateTime, 1000);
   updateDateTime();
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const links = document.querySelectorAll('#navbar-default a');
+      const currentPage = location.pathname.split("/").pop();
+
+      links.forEach(link => {
+        const href = link.getAttribute("href");
+        if (href === currentPage) {
+          link.classList.add("text-white", "bg-blue-700");
+          link.setAttribute("aria-current", "page");
+        } else {
+          link.classList.remove("text-white", "bg-blue-700");
+          link.removeAttribute("aria-current");
+        }
+      });
+
+      const datetime = document.getElementById("datetimenow");
+      if (datetime) {
+        datetime.textContent = new Date().toLocaleString();
+      }
+    });
