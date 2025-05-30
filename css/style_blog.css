@@ -89,6 +89,7 @@ body {
 }
 
 .review-card {
+    align-items: center;
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;

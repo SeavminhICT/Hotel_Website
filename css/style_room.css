@@ -1,8 +1,11 @@
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
   background: #f5f5f5;
   margin: 0;
   padding: 0;
+  word-break: break-word;
+  overflow-x: hidden;
 }
 
 .container {
@@ -10,6 +13,7 @@ body {
   padding-right: 150px;
   max-width: 100%;
   margin: auto;
+  box-sizing: border-box;
 }
 
 .banner {
@@ -62,9 +66,11 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .nav-list li {
   margin-right: 25px;
 }
+
 .nav-list a {
   text-decoration: none;
   color: #000;
@@ -73,8 +79,8 @@ body {
   display: inline-block;
   border-bottom: 2px solid transparent;
 }
+
 .nav-list a:hover {
-  /* color: #0071c2; */
   border-bottom: 2px solid #0071c2;
 }
 
@@ -317,6 +323,7 @@ body {
 
 .see-more-label:hover {
   text-decoration: underline;
+  color: #0056b3;
 }
 
 .more-rooms {
@@ -330,103 +337,6 @@ body {
   display: block;
   opacity: 1;
   transform: translateY(0);
-}
-
-.see-more-label {
-  cursor: pointer;
-  font-weight: bold;
-  color: #007bff;
-  text-decoration: underline;
-}
-
-.see-more-label:hover {
-  color: #0056b3;
-}
-
-/* Base styles (Desktop first) */
-
-/* Tablet styles */
-@media (max-width: 1024px) {
-  .container {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  .banner {
-    flex-direction: column;
-    padding-top: 60px;
-  }
-
-  .left.image-box {
-    height: 300px;
-  }
-
-  .right .image-box {
-    height: 150px;
-  }
-
-  .overview-section {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .main-layout {
-    flex-direction: column;
-  }
-
-  .amenities-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .banner {
-    padding-top: 40px;
-  }
-
-  .left.image-box {
-    height: 200px;
-  }
-
-  .right .image-box {
-    height: 120px;
-  }
-
-  .tabs {
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .hotel-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .overview-text,
-  .highlights-box,
-  .amenities-section,
-  #none {
-    width: 100%;
-  }
-
-  .amenities-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .highlights-list li {
-    margin-bottom: 20px;
-  }
-
-  .availability-button {
-    width: 100%;
-    text-align: center;
-  }
 }
 
 /* Location section */
@@ -473,4 +383,124 @@ body {
 #scrollTopBtn:hover {
   transform: scale(1.15);
   box-shadow: 0 12px 24px rgba(76, 175, 80, 0.6);
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .banner {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+
+  .left.image-box {
+    height: 300px;
+  }
+
+  .right .image-box {
+    height: 150px;
+  }
+
+  .overview-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .amenities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .banner {
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 40px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left.image-box {
+    height: 200px;
+  }
+
+  .right .image-box {
+    height: 120px;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .hotel-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .overview-text,
+  .highlights-box,
+  .amenities-section,
+  #none {
+    width: 100%;
+  }
+
+  .amenities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights-list li {
+    margin-bottom: 20px;
+  }
+
+  .availability-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .room-card {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .room-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .price-info {
+    text-align: left;
+  }
+
+  .room-section,
+  .location-section {
+    padding: 15px;
+  }
+
+  .nav-list {
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px;
+  }
+
+  .nav-list li {
+    flex: 0 0 auto;
+  }
 }
