@@ -1,362 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Booking Confirmation</title>
-    <link rel="stylesheet" href="css/root.css">
-    <link rel="stylesheet" href="css/room.css">
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/room.css" />
 
-        <!-- Flowbite CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome for Icons -->
-  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Flowbite CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <script
+      src="https://kit.fontawesome.com/yourkit.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="css/header.css"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"> -->
-
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
 
-       <nav class="sticky top-0 z-50 bg-white border-gray-200 dark:bg-gray-900">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    
-    <!-- Logo -->
-<a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse hover:opacity-80 transition-opacity">
-  <img src="images/logo.png" class="h-16 w-auto rounded-lg shadow-lg" alt="Flowbite Logo" />
-  <span class="self-center text-2xl font-bold whitespace-nowrap text-gray-800 dark:text-white">The Grand Aurum</span>
-</a>
+    <nav class="sticky top-0 z-50 bg-white border-gray-200 dark:bg-gray-900">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <!-- Logo -->
+        <a
+          href="index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse hover:opacity-80 transition-opacity"
+        >
+          <img
+            src="images/logo.png"
+            class="h-16 w-auto rounded-lg shadow-lg"
+            alt="Flowbite Logo"
+          />
+          <span
+            class="self-center text-2xl font-bold whitespace-nowrap text-gray-800 dark:text-white"
+            >The Grand Aurum</span
+          >
+        </a>
 
-    <!-- Date/Time -->
-    <span id="datetimenow" class="text-sm text-gray-600 dark:text-gray-300"></span>
+        <!-- Date/Time -->
+        <span
+          id="datetimenow"
+          class="text-sm text-gray-600 dark:text-gray-300"
+        ></span>
 
-    <!-- Hamburger Button -->
-    <button  data-collapse-toggle="navbar-default" type="button"
-      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700"
-      aria-controls="navbar-default" aria-expanded="false">
-      <span class="sr-only">Open main menu</span>
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
+        <!-- Hamburger Button -->
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
 
-    <!-- Navigation Menu -->
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul
-        class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gray-50 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li><a href="index.html"
-            class=" active hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-            aria-current="page">Home</a></li>
-        <li><a href="myBookings.html"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">My Booking</a>
-        </li>
-        <li><a href="aboutus.html"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">About US</a>
-        </li>
-        <li><a href="rooms.html"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Room</a>
-        </li>
-        <li><a href="service.html"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Services</a>
-        </li>
-                <li><a href="blog.html"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Blog</a>
-        </li>
-        <li><a href="contaceUS.html"
-            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500">Contact
-            US</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-   
-  <section class="hero-section">
-    <div class="hero-content">
-      <h1>Chase elegance. Reserve your dream stay now.</h1>
-      <p>Discover the finest hotels from all over the world.</p>
-    </div>
-
-    <div class="booking-bar">
-      <div class="booking-item destination">
-        <label><span class="icon">&#x1F4CD;</span> Where are you headed?</label>
-        <select>
-          <option>Singapore</option>
-          <option>New York</option>
-          <option>Tokyo</option>
-        </select>
-      </div>
-      <div class="booking-item checkin">
-        <label><span class="icon">&#x1F4C5;</span> Check in</label>
-        <div class="date-input-wrapper">
-          <input type="date" />
-          <span class="date-icon">&#x1F4C5;</span>
+        <!-- Navigation Menu -->
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 bg-gray-50 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="active hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="myBookings.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500"
+                >My Booking</a
+              >
+            </li>
+            <li>
+              <a
+                href="aboutus.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500"
+                >About US</a
+              >
+            </li>
+            <li>
+              <a
+                href="rooms.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500"
+                >Room</a
+              >
+            </li>
+            <li>
+              <a
+                href="service.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="blog.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="contaceUS.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white dark:hover:text-blue-500"
+                >Contact US</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="booking-item checkout">
-        <label><span class="icon">&#x1F4C5;</span> Check out</label>
-        <div class="date-input-wrapper">
-          <input type="date" />
-          <span class="date-icon">&#x1F4C5;</span>
+    </nav>
+
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Chase elegance. Reserve your dream stay now.</h1>
+        <p>Discover the finest hotels from all over the world.</p>
+      </div>
+
+      <div class="booking-bar">
+        <div class="booking-item destination">
+          <label
+            ><span class="icon">&#x1F4CD;</span> Where are you headed?</label
+          >
+          <select>
+            <option>Singapore</option>
+            <option>New York</option>
+            <option>Tokyo</option>
+          </select>
         </div>
-      </div>
-      <div class="booking-item rooms">
-        <label><span class="icon">&#x1F464;</span> Rooms | Adults, Children</label>
-        <select>
-          <option>01 | 02</option>
-          <option>02 | 04</option>
-          <option>03 | 06</option>
-        </select>
-      </div>
-      <a href="listhotel.html">
-        
-        <button class="booking-button">Book Now</button>
-      </a>
-    </div>
-  </section>
-
-  <section class="listings">
-    <h2 class="section-title">Top Rated</h2>
-    <div class="cards">
-      
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Marseilles Beachfront Hotel">
-        <h3>Marseilles Beachfront Hotel</h3>
-        <p class="price">$2024 <span>/ night</span></p>
-        <p class="address">123 Street, City, Country</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Andronis Boutique Hotel">
-        <h3>Andronis Boutique Hotel</h3>
-        <p class="price">$2024 <span>/ night</span></p>
-        <p class="address">123 Street, City, Country</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1501183638714-8b2b43b292b8?auto=format&fit=crop&w=400&q=80" alt="Waldorf Astoria Los Cabos Pedregal">
-        <h3>Waldorf Astoria Los Cabos Pedregal</h3>
-        <p class="price">$2024 <span>/ night</span></p>
-        <p class="address">123 Street, City, Country</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=400&q=80" alt="Deco Boutique Hotel">
-        <h3>Deco Boutique Hotel</h3>
-        <p class="price">$2024 <span>/ night</span></p>
-        <p class="address">123 Street, City, Country</p>
-      </div>
-    </div>
-
-    <h2 class="section-title">Category</h2>
-    <div class="cards">
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Viroth's Hotel">
-        <h3>Viroth's Hotel</h3>
-        <p class="price">$2024 <span>/ night</span></p>
-        <p class="address">123 Street, City, Country</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1501117716987-c8e6a7a3a3a3?auto=format&fit=crop&w=400&q=80" alt="Hotel Best Auto Hogar">
-        <h3>Hotel Best Auto Hogar</h3>
-        <p class="price">$2024 <span>/ night</span></p>
-        <p class="address">123 Street, City, Country</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=400&q=80" alt="Trump International Hotel Washington D.C.">
-        <h3>Trump International Hotel Washington D.C.</h3>
-        <p class="price">$2024 <span>/ night</span></p>
-        <p class="address">123 Street, City, Country</p>
-      </div>
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Kayakapi Premium Caves - Cappadocia">
-        <h3>Kayakapi Premium Caves - Cappadocia</h3>
-        <p class="price">$2024 <span>/ night</span></p>
-        <p class="address">123 Street, City, Country</p>
-      </div>
-    </div>
-  </section>
-
- <div class="container mx-auto px-4 py-10">
-    <div class="text-center mb-10">
-      <h6 class="text-primary text-sm uppercase font-semibold">Our Rooms</h6>
-      <h1 class="text-3xl font-bold">Explore Our <span class="text-blue-600 uppercase">Rooms</span></h1>
-    </div>
-
-    <!-- Grid Container -->
-    <div class="grid md:grid-cols-3 gap-6">
-      
-      <!-- Room Card Template -->
-      <div class="bg-white rounded-lg shadow-md overflow-hidden">
-        <div class="relative">
-          <img src="images/room-3.png" alt="Room" class="w-full h-56 object-cover">
-          <div class="absolute top-2 left-2 bg-yellow-500 text-white text-sm font-semibold px-3 py-1 rounded">$100/Night</div>
-        </div>
-        <div class="p-4">
-          <h5 class="text-lg font-bold mb-2">Junior Suite</h5>
-          <div class="text-yellow-400 text-lg mb-2">★★★★★</div>
-          <div class="text-sm text-gray-600 space-x-4 mb-2">
-            <span><i class="fa-solid fa-bed mr-1"></i>3 Bed</span>
-            <span><i class="fa-solid fa-bath mr-1"></i>2 Bath</span>
-            <span><i class="fa-solid fa-wifi mr-1"></i>Wifi</span>
-          </div>
-          <p class="text-sm text-gray-500 mb-4">
-            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
-          </p>
-          <div class="flex justify-between">
-            <a href="#" class="bg-yellow-500 text-white text-xs px-3 py-1 rounded hover:bg-yellow-600">VIEW DETAIL</a>
-            <a href="#" class="bg-gray-800 text-white text-xs px-3 py-1 rounded hover:bg-gray-900">BOOK NOW</a>
+        <div class="booking-item checkin">
+          <label><span class="icon">&#x1F4C5;</span> Check in</label>
+          <div class="date-input-wrapper">
+            <input type="date" />
+            <span class="date-icon">&#x1F4C5;</span>
           </div>
         </div>
+        <div class="booking-item checkout">
+          <label><span class="icon">&#x1F4C5;</span> Check out</label>
+          <div class="date-input-wrapper">
+            <input type="date" />
+            <span class="date-icon">&#x1F4C5;</span>
+          </div>
+        </div>
+        <div class="booking-item rooms">
+          <label
+            ><span class="icon">&#x1F464;</span> Rooms | Adults, Children</label
+          >
+          <select>
+            <option>01 | 02</option>
+            <option>02 | 04</option>
+            <option>03 | 06</option>
+          </select>
+        </div>
+        <a href="listhotel.html">
+          <button class="booking-button">Book Now</button>
+        </a>
+      </div>
+    </section>
+
+    <section class="listings">
+      <h2 class="section-title">Top Rated</h2>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+            alt="Marseilles Beachfront Hotel"
+          />
+          <h3>Marseilles Beachfront Hotel</h3>
+          <p class="price">$2024 <span>/ night</span></p>
+          <p class="address">123 Street, City, Country</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80"
+            alt="Andronis Boutique Hotel"
+          />
+          <h3>Andronis Boutique Hotel</h3>
+          <p class="price">$2024 <span>/ night</span></p>
+          <p class="address">123 Street, City, Country</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1501183638714-8b2b43b292b8?auto=format&fit=crop&w=400&q=80"
+            alt="Waldorf Astoria Los Cabos Pedregal"
+          />
+          <h3>Waldorf Astoria Los Cabos Pedregal</h3>
+          <p class="price">$2024 <span>/ night</span></p>
+          <p class="address">123 Street, City, Country</p>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=400&q=80"
+            alt="Deco Boutique Hotel"
+          />
+          <h3>Deco Boutique Hotel</h3>
+          <p class="price">$2024 <span>/ night</span></p>
+          <p class="address">123 Street, City, Country</p>
+        </div>
       </div>
 
-      <!-- Duplicate the card below with different images/titles as needed -->
-
-      <div class="bg-white rounded-lg shadow-md overflow-hidden">
-        <div class="relative">
-          <img src="images/room-1.png" alt="Room" class="w-full h-56 object-cover">
-          <div class="absolute top-2 left-2 bg-yellow-500 text-white text-sm font-semibold px-3 py-1 rounded">$100/Night</div>
+      <h2 class="section-title">Category</h2>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+            alt="Viroth's Hotel"
+          />
+          <h3>Viroth's Hotel</h3>
+          <p class="price">$2024 <span>/ night</span></p>
+          <p class="address">123 Street, City, Country</p>
         </div>
-        <div class="p-4">
-          <h5 class="text-lg font-bold mb-2">Executive Suite</h5>
-          <div class="text-yellow-400 text-lg mb-2">★★★★★</div>
-          <div class="text-sm text-gray-600 space-x-4 mb-2">
-            <span><i class="fa-solid fa-bed mr-1"></i>3 Bed</span>
-            <span><i class="fa-solid fa-bath mr-1"></i>2 Bath</span>
-            <span><i class="fa-solid fa-wifi mr-1"></i>Wifi</span>
-          </div>
-          <p class="text-sm text-gray-500 mb-4">
-            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
-          </p>
-          <div class="flex justify-between">
-            <a href="#" class="bg-yellow-500 text-white text-xs px-3 py-1 rounded hover:bg-yellow-600">VIEW DETAIL</a>
-            <a href="#" class="bg-gray-800 text-white text-xs px-3 py-1 rounded hover:bg-gray-900">BOOK NOW</a>
-          </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1501117716987-c8e6a7a3a3a3?auto=format&fit=crop&w=400&q=80"
+            alt="Hotel Best Auto Hogar"
+          />
+          <h3>Hotel Best Auto Hogar</h3>
+          <p class="price">$2024 <span>/ night</span></p>
+          <p class="address">123 Street, City, Country</p>
         </div>
-      </div>
-
-      <div class="bg-white rounded-lg shadow-md overflow-hidden">
-        <div class="relative">
-          <img src="images/hotel1.png" alt="Room" class="w-full h-56 object-cover">
-          <div class="absolute top-2 left-2 bg-yellow-500 text-white text-sm font-semibold px-3 py-1 rounded">$100/Night</div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=400&q=80"
+            alt="Trump International Hotel Washington D.C."
+          />
+          <h3>Trump International Hotel Washington D.C.</h3>
+          <p class="price">$2024 <span>/ night</span></p>
+          <p class="address">123 Street, City, Country</p>
         </div>
-        <div class="p-4">
-          <h5 class="text-lg font-bold mb-2">Super Deluxe</h5>
-          <div class="text-yellow-400 text-lg mb-2">★★★★★</div>
-          <div class="text-sm text-gray-600 space-x-4 mb-2">
-            <span><i class="fa-solid fa-bed mr-1"></i>3 Bed</span>
-            <span><i class="fa-solid fa-bath mr-1"></i>2 Bath</span>
-            <span><i class="fa-solid fa-wifi mr-1"></i>Wifi</span>
-          </div>
-          <p class="text-sm text-gray-500 mb-4">
-            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.
-          </p>
-          <div class="flex justify-between">
-            <a href="#" class="bg-yellow-500 text-white text-xs px-3 py-1 rounded hover:bg-yellow-600">VIEW DETAIL</a>
-            <a href="#" class="bg-gray-800 text-white text-xs px-3 py-1 rounded hover:bg-gray-900">BOOK NOW</a>
-          </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80"
+            alt="Kayakapi Premium Caves - Cappadocia"
+          />
+          <h3>Kayakapi Premium Caves - Cappadocia</h3>
+          <p class="price">$2024 <span>/ night</span></p>
+          <p class="address">123 Street, City, Country</p>
         </div>
       </div>
+    </section>
 
-      <!-- Add more room cards as needed -->
+    <div class="container mx-auto px-4 py-10">
+      <div class="text-center mb-10">
+        <h6 class="text-primary text-sm uppercase font-semibold">Our Rooms</h6>
+        <h1 class="text-3xl font-bold">
+          Explore Our <span class="text-blue-600 uppercase">Rooms</span>
+        </h1>
+      </div>
 
+      <!-- Grid Container -->
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Room Card Template -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="relative">
+            <img
+              src="images/room-3.png"
+              alt="Room"
+              class="w-full h-56 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-yellow-500 text-white text-sm font-semibold px-3 py-1 rounded"
+            >
+              $100/Night
+            </div>
+          </div>
+          <div class="p-4">
+            <h5 class="text-lg font-bold mb-2">Junior Suite</h5>
+            <div class="text-yellow-400 text-lg mb-2">★★★★★</div>
+            <div class="text-sm text-gray-600 space-x-4 mb-2">
+              <span><i class="fa-solid fa-bed mr-1"></i>3 Bed</span>
+              <span><i class="fa-solid fa-bath mr-1"></i>2 Bath</span>
+              <span><i class="fa-solid fa-wifi mr-1"></i>Wifi</span>
+            </div>
+            <p class="text-sm text-gray-500 mb-4">
+              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+              sed diam stet diam sed stet lorem.
+            </p>
+            <div class="flex justify-between">
+              <a
+                href="#"
+                class="bg-yellow-500 text-white text-xs px-3 py-1 rounded hover:bg-yellow-600"
+                >VIEW DETAIL</a
+              >
+              <a
+                href="#"
+                class="bg-gray-800 text-white text-xs px-3 py-1 rounded hover:bg-gray-900"
+                >BOOK NOW</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Duplicate the card below with different images/titles as needed -->
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="relative">
+            <img
+              src="images/room-1.png"
+              alt="Room"
+              class="w-full h-56 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-yellow-500 text-white text-sm font-semibold px-3 py-1 rounded"
+            >
+              $100/Night
+            </div>
+          </div>
+          <div class="p-4">
+            <h5 class="text-lg font-bold mb-2">Executive Suite</h5>
+            <div class="text-yellow-400 text-lg mb-2">★★★★★</div>
+            <div class="text-sm text-gray-600 space-x-4 mb-2">
+              <span><i class="fa-solid fa-bed mr-1"></i>3 Bed</span>
+              <span><i class="fa-solid fa-bath mr-1"></i>2 Bath</span>
+              <span><i class="fa-solid fa-wifi mr-1"></i>Wifi</span>
+            </div>
+            <p class="text-sm text-gray-500 mb-4">
+              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+              sed diam stet diam sed stet lorem.
+            </p>
+            <div class="flex justify-between">
+              <a
+                href="#"
+                class="bg-yellow-500 text-white text-xs px-3 py-1 rounded hover:bg-yellow-600"
+                >VIEW DETAIL</a
+              >
+              <a
+                href="#"
+                class="bg-gray-800 text-white text-xs px-3 py-1 rounded hover:bg-gray-900"
+                >BOOK NOW</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div class="relative">
+            <img
+              src="images/hotel1.png"
+              alt="Room"
+              class="w-full h-56 object-cover"
+            />
+            <div
+              class="absolute top-2 left-2 bg-yellow-500 text-white text-sm font-semibold px-3 py-1 rounded"
+            >
+              $100/Night
+            </div>
+          </div>
+          <div class="p-4">
+            <h5 class="text-lg font-bold mb-2">Super Deluxe</h5>
+            <div class="text-yellow-400 text-lg mb-2">★★★★★</div>
+            <div class="text-sm text-gray-600 space-x-4 mb-2">
+              <span><i class="fa-solid fa-bed mr-1"></i>3 Bed</span>
+              <span><i class="fa-solid fa-bath mr-1"></i>2 Bath</span>
+              <span><i class="fa-solid fa-wifi mr-1"></i>Wifi</span>
+            </div>
+            <p class="text-sm text-gray-500 mb-4">
+              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
+              sed diam stet diam sed stet lorem.
+            </p>
+            <div class="flex justify-between">
+              <a
+                href="#"
+                class="bg-yellow-500 text-white text-xs px-3 py-1 rounded hover:bg-yellow-600"
+                >VIEW DETAIL</a
+              >
+              <a
+                href="#"
+                class="bg-gray-800 text-white text-xs px-3 py-1 rounded hover:bg-gray-900"
+                >BOOK NOW</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more room cards as needed -->
+      </div>
     </div>
-  </div>
 
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="logo">
+            <img src="images/logo.png" class="footer-logo" />
+            <span class="logo-text">The Grand Aurum</span>
+          </div>
+        </div>
 
-           <footer>
-        <div class="footer-content">
-            <div class="footer-column">
-                <div class="logo">
-                    <img src="images/logo.png"  class="footer-logo">
-                    <span class="logo-text">The Grand Aurum</span>
-                </div>
-            </div>
-            
-            <div class="footer-column">
-                <h3>About Us</h3>
-                <ul>
-                    <li><a href="#">Company Overview</a></li>
-                    <li><a href="#">Our Mission & Values</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Press Releases</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Customer Service</h3>
-                <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Live Chat</a></li>
-                    <li><a href="#">Cancellation Policy</a></li>
-                    <li><a href="#">Booking Policies</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Explore</h3>
-                <ul>
-                    <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Special Offers</a></li>
-                    <li><a href="#">Last-Minute Deals</a></li>
-                    <li><a href="#">Travel Guides</a></li>
-                    <li><a href="#">Blog & Travel Tips</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Accessibility</a></li>
-                    <li><a href="#">Feedback & Suggestions</a></li>
-                    <li><a href="#">Sitemap</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-column">
-                <h3>Membership</h3>
-                <ul>
-                    <li><a href="#">Loyalty Program</a></li>
-                    <li><a href="#">Limited Exclusive Offers</a></li>
-                    <li><a href="#">Rewards & Benefits</a></li>
-                </ul>
-            </div>
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">Company Overview</a></li>
+            <li><a href="#">Our Mission & Values</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press Releases</a></li>
+          </ul>
         </div>
-        
-        <div class="footer-bottom">
-            <div>© 2024 Logoipsum. All rights reserved.</div>
-            
-            <div class="social-icons">
-                <div class="social-icon">
-                    <img src="images/twitter.png" >
-                </div>
-                <div class="social-icon">
-                    <img src="images/linkedin.png" >
-                </div>
-                <div class="social-icon">
-                    <img src="images/whatsapp.png" >
-                </div>
-                <div class="social-icon">
-                    <img src="images/facebook.png" >
-                </div>
-            </div>
+
+        <div class="footer-column">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Live Chat</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#">Booking Policies</a></li>
+          </ul>
         </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Last-Minute Deals</a></li>
+            <li><a href="#">Travel Guides</a></li>
+            <li><a href="#">Blog & Travel Tips</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Feedback & Suggestions</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Membership</h3>
+          <ul>
+            <li><a href="#">Loyalty Program</a></li>
+            <li><a href="#">Limited Exclusive Offers</a></li>
+            <li><a href="#">Rewards & Benefits</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2024 Logoipsum. All rights reserved.</div>
+
+        <div class="social-icons">
+          <div class="social-icon">
+            <img src="images/twitter.png" />
+          </div>
+          <div class="social-icon">
+            <img src="images/linkedin.png" />
+          </div>
+          <div class="social-icon">
+            <img src="images/whatsapp.png" />
+          </div>
+          <div class="social-icon">
+            <img src="images/facebook.png" />
+          </div>
+        </div>
+      </div>
     </footer>
-
-
-</body>
+  </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
-<script src="javascript/header.js"></script>
-  
+  <script src="javascript/header.js"></script>
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"
+  ></script>
 </html>
